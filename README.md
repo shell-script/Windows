@@ -110,10 +110,12 @@ Windows Registry Editor Version 5.00
 
 ### youtube-dl设置文件目录：C:/Users/username/youtube-dl.conf
 <pre>
--i
---proxy socks5://127.0.0.1:2080/
+--ignore-errors
+--proxy http://127.0.0.1:2081/
+# --proxy socks5://127.0.0.1:2080/ 直播推流不支持socks5
+--hls-prefer-ffmpeg
 -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'
--o V:/annie/"%(uploader)s (%(uploader_id)s)/%(upload_date)s - %(title)s - (%(duration)ss) [%(resolution)s] [%(id)s].%(ext)s"
+-o V:/Videos/"%(uploader)s(%(uploader_id)s)/%(upload_date)s-%(title)s-(%(duration)ss)[%(resolution)s][%(id)s].%(ext)s"
 --add-metadata
 --write-description
 --write-thumbnail
@@ -227,6 +229,7 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 - [(pin6)ScreenToGif](https://github.com/NickeManarin/ScreenToGif/releases)
 - [(pin7)网易云音乐](https://music.163.com/#/download)
 - [(pin10)Windows Calculator](https://www.microsoft.com/en-us/p/windows-calculator/9wzdncrfhvn5)
+- [gsudo](https://github.com/gerardog/gsudo)
 - [youtube-dl](https://github.com/ytdl-org/youtube-dl/releases)、[Annie](https://github.com/iawia002/annie/releases)
 - [FFmpeg(GPL ver.)](https://github.com/BtbN/FFmpeg-Builds/releases)
 - [Everything](https://www.voidtools.com/zh-cn/downloads/)
@@ -296,7 +299,7 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 - [DiskGenius](https://www.423down.com/8073.html)
 
 ## Developer tools
-- [JDK](https://www.oracle.com/java/technologies/javase-downloads.html)、[OpenJDK](https://developers.redhat.com/products/openjdk/download)
+- [AdoptOpenJDK](https://adoptopenjdk.net/index.html)(totally free)、[JDK](https://www.oracle.com/java/technologies/javase-downloads.html)(the King)、[RedHat OpenJDK](https://developers.redhat.com/products/openjdk/download)(only free for development)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [(pin8)IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows)、[JetBrains Mono](https://www.jetbrains.com/lp/mono/)、[patch](https://zhile.io/)
