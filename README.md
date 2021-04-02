@@ -238,7 +238,7 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 - [SteamAchievementManager](https://github.com/gibbed/SteamAchievementManager/releases)、[SAM-Auto](https://github.com/unencouraged/SAM-Auto/releases)
 - [Adobe software series](https://weibo.com/1112829033)
 - [百度云](http://pan.baidu.com/download)
-- [小栗子机器人](http://www.xiaolz.cn/)
+- [kuku-bot主页](https://github.com/kukume/kuku-bot)、[kuku-bot下载地址](https://file.kuku.me/kuku-bot/)
 - [Typora](https://typora.io/)
 - [CCleaner](https://www.423down.com/716.html)、[Winapp2](https://github.com/MoscaDotTo/Winapp2)
 - [XMind](https://www.ghpym.com/xmindzen.html)
