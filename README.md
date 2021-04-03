@@ -2,37 +2,51 @@
 避免每次装机重头寻找历史安装过的软件，索性列一个清单，炼成半小时装机软件复原大法
 
 ### 关闭索引
+```shell
 设置 —— 搜索 —— 搜索Windows —— 把各磁盘加入 "排除的文件夹" ，在 "高级搜索索引器设置" 中排除现有的文件夹并重建索引
 
 各磁盘右键属性 —— 取消勾选 "除了文件属性外，还允许索引此驱动器上文件的内容" —— 选择 "仅将更改应用于驱动器"
+```
 
 ### 关闭休眠模式:
-<pre>
+```shell
 powercfg -h off
-</pre>
+```
 
 ### 关闭系统还原:
+```shell
 设置 —— 系统 —— 存储 —— 系统和保留空间 —— 管理系统还原
+```
 
 ### 关闭系统错误转储文件
+```shell
 此电脑右键属性 —— 高级系统设置 —— 启动和故障回复设置 —— 写入调试信息:(无)
+```
 
 ### CPU核数设置:
+```shell
 msconfig
+```
 
 ### 卓越性能电源计划：
-<pre>
+```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-</pre>
+```
 
-### 一键解除所有UWP应用的网络隔离（CMD指令）：
-[图形化软件](https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager)
-<pre>
+### 一键解除所有UWP应用的网络隔离（CMD指令/Powershell指令）：
+[Windows Loopback Exemption Manager](https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager)(微软官方出品)、[Windows 8 AppContainer Loopback Utility](https://www.telerik.com/fiddler/add-ons)(第三方软件)
+
+```cmd
 FOR /F "tokens=11 delims=\" %p IN ('REG QUERY "HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings"') DO CheckNetIsolation.exe LoopbackExempt -a -p=%p
-</pre>
+```
+
+```powershell
+Get-ChildItem -Path Registry::"HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings\" -name | ForEach-Object {CheckNetIsolation.exe LoopbackExempt -a -p="$_"}
+```
 
 ### git代理设置：
-<pre>
+
+```shell
 # ssh代理配置文件路径：C:/Users/username/.ssh/config
 Host github.com
     ProxyCommand connect -S localhost:2080 %h %p
@@ -43,10 +57,10 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:2080
 # git配置文件路径：C:/Users/username/.gitconfig
 [http "https://github.com"]
 	proxy = socks5://127.0.0.1:2080
-</pre>
+```
 
 ### pip代理功能稀烂，建议换阿里源：
-<pre>
+```shell
 pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
 pip config set install.trusted-host mirrors.aliyun.com
 
@@ -56,10 +70,10 @@ index-url = http://mirrors.aliyun.com/pypi/simple/
 # proxy=http://127.0.0.1:2081
 [install]
 trusted-host = mirrors.aliyun.com
-</pre>
+```
 
 ### npm、yarn的代理/换源设置
-<pre>
+```shell
 npm config set proxy http://127.0.0.1:2081
 npm config set https-proxy http://127.0.0.1:2081
 npm config set registry https://registry.npm.taobao.org
@@ -67,10 +81,10 @@ npm config set registry https://registry.npm.taobao.org
 yarn config set proxy http://127.0.0.1:2081
 yarn config set https-proxy http://127.0.0.1:2081
 yarn config set registry https://registry.npm.taobao.org
-</pre>
+```
 
 ### Chrome浏览器实验性功能：
-<pre>
+```shell
 Override software rendering list
 Smooth Scrolling
 GPU rasterization
@@ -85,10 +99,10 @@ Skia API for compositing
 Heavy Ad Intervention
 Enforce deprecation of legacy TLS versions
 Enable Tab Search
-</pre>
+```
 
 ### 去除Win10默认显示的一些目录
-<pre>
+```shell
 Windows Registry Editor Version 5.00
 ;如需还原去除上语句前减号即可
 
@@ -106,10 +120,10 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
 ;取消我的电脑"3D对象"文件夹
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
-</pre>
+```
 
 ### youtube-dl设置文件目录：C:/Users/username/youtube-dl.conf
-<pre>
+```shell
 --ignore-errors
 --proxy http://127.0.0.1:2081/
 # --proxy socks5://127.0.0.1:2080/ 直播推流不支持socks5
@@ -119,10 +133,10 @@ Windows Registry Editor Version 5.00
 --add-metadata
 --write-description
 --write-thumbnail
-</pre>
+```
 
 ### WIN10优化设置，关闭遥测、熔断、TSX
-<pre>
+```shell
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorPort]
@@ -136,18 +150,18 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
 "DisableTsx"=dword:00000000
-</pre>
+```
 
 ### cmd设置编码格式，936为GBK，65001为UTF-8
-<pre>
+```shell
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
 "autorun"="chcp 936/65001"
-</pre>
+```
 
 ### IntelliJ IDEA设置备忘录
-<pre>
+```shell
 【IntelliJ IDEA启动参数】
 文件目录：~\JetBrains\IntelliJIDEA\bin\idea64.exe.vmoptions
 -Xms2048m
@@ -187,7 +201,7 @@ Build, Execution, Deployment —— Compiler —— √ Build project automatica
 Build, Execution, Deployment —— Compiler —— Build process heap size(Mbytes)：2048 
 【翻译设置】
 Tools —— Translation —— 常规 —— √ 使用translate.google.com ； —— 字体 —— 主要字体：Microsoft YaHei UI ； 音标字体：Arial 
-</pre>
+```
 
 ## Useful Websites
 - [UUP dump](https://uupdump.ml/?lang=zh-cn)
@@ -199,16 +213,16 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 - [微软常用运行库](https://www.ghpym.com/yxkhj.html)、[Alter version](https://github.com/abbodi1406/vcredist/releases)
 - [HWID_KMS38](http://bbs.pcbeta.com/viewthread-1810482-1-1.html)
 - [搜狗输入法](https://pinyin.sogou.com/)
-- [Bandizip](https://www.bandisoft.com/bandizip/dl/)、[patch](https://www.423down.com/9735.html)、[7-Zip](https://www.7-zip.org/)、[7-Zip-zstd](https://github.com/mcmilk/7-Zip-zstd/releases)、[WinRAR](https://apphot.cc/121.html)
+- [Bandizip](https://www.bandisoft.com/bandizip/dl/)、[patch](https://www.423down.com/9735.html)、[7-Zip](https://www.7-zip.org/)
 - [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)、[v2rayN](https://github.com/2dust/v2rayN/releases)
 - [火绒](https://www.huorong.cn/person5.html)
-- [GeForce Experience](https://www.nvidia.com/zh-cn/geforce/geforce-experience/)、[GeForce Drivers](https://www.nvidia.cn/geforce/drivers/)
+- [GeForce Drivers](https://www.nvidia.cn/geforce/drivers/)
 - [Logitech Gaming Software](https://support.logi.com/hc/zh-cn/articles/360025298053)
 - [Realtek High Definition Audio (HDA) Version WHQL](https://www.necacom.net/index.php/realtek/hda/)
 - [Intel Graphics Driver](https://downloadcenter.intel.com/zh-cn/product/88345/-530)
 - [Intel® Graphics Command Center](https://www.microsoft.com/en-us/p/intel-graphics-command-center/9plfnlnt3g5g)
 - [Intel Wi-Fi 6 AX200 (Gig+) Driver](https://downloadcenter.intel.com/zh-cn/product/189347/-Wi-Fi-6-AX200-Gig-)
-- [nvidiaProfileInspector](https://github.com/Orbmu2k/nvidiaProfileInspector/releases/)、[NVidiaProfileInspectorDmW](https://github.com/DeadManWalkingTO/NVidiaProfileInspectorDmW/releases)
+- [nvidiaProfileInspector](https://github.com/Orbmu2k/nvidiaProfileInspector/releases/)
 - [DriverStoreExplorer](https://github.com/lostindark/DriverStoreExplorer/releases)
 - [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor/releases)
 - [OpenHashTab](https://github.com/namazso/OpenHashTab/releases)
@@ -221,16 +235,16 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 - [Groupy](https://store.steampowered.com/app/912170)
 - [Fences](https://store.steampowered.com/app/607380)
 - [Start10](https://store.steampowered.com/app/620050/Start10)
-- [(pin1)QuickCut](https://github.com/HaujetZhao/QuickCut)、[XMedia Recode](https://www.xmedia-recode.de/en/download.php)
+- [(pin1)QuickCut](https://github.com/HaujetZhao/QuickCut)、[XMedia Recode](https://www.xmedia-recode.de/en/download.php)、[格式工厂](https://www.423down.com/1072.html)
 - [(pin2)Microsoft Sticky Notes](https://www.microsoft.com/en-us/p/microsoft-sticky-notes/9nblggh4qghw)
-- [(pin3)Newsflow](https://www.microsoft.com/zh-cn/p/newsflow/9nblggh58s5r)
+- [(pin3)Fluent Reader](https://github.com/yang991178/fluent-reader)
 - [(pin4)Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
 - [(pin5)WinSCP](https://winscp.net/eng/download.php)
 - [(pin6)ScreenToGif](https://github.com/NickeManarin/ScreenToGif/releases)
 - [(pin7)网易云音乐](https://music.163.com/#/download)
 - [(pin10)Windows Calculator](https://www.microsoft.com/en-us/p/windows-calculator/9wzdncrfhvn5)
 - [gsudo](https://github.com/gerardog/gsudo)
-- [youtube-dl](https://github.com/ytdl-org/youtube-dl/releases)、[Annie](https://github.com/iawia002/annie/releases)
+- [youtube-dl](https://github.com/ytdl-org/youtube-dl/releases)
 - [FFmpeg(GPL ver.)](https://github.com/BtbN/FFmpeg-Builds/releases)
 - [Everything](https://www.voidtools.com/zh-cn/downloads/)
 - [Snipaste](https://www.snipaste.com/)
@@ -241,7 +255,6 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 - [SteamAchievementManager](https://github.com/gibbed/SteamAchievementManager/releases)、[SAM-Auto](https://github.com/unencouraged/SAM-Auto/releases)
 - [Adobe software series](https://weibo.com/1112829033)
 - [百度云](http://pan.baidu.com/download)
-- [kuku-bot主页](https://github.com/kukume/kuku-bot)、[kuku-bot下载地址](https://file.kuku.me/kuku-bot/)
 - [Typora](https://typora.io/)
 - [CCleaner](https://www.423down.com/716.html)、[Winapp2](https://github.com/MoscaDotTo/Winapp2)
 - [XMind](https://www.ghpym.com/xmindzen.html)
@@ -263,7 +276,7 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 - [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
 - [DISM++](http://www.chuyu.me/zh-Hans/index.html)、[wsusscn3.cab](https://github.com/Chuyu-Team/Dism-Multi-language/releases)
 - [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere)、[Fiddler Classic](https://www.telerik.com/download/fiddler)
-- [waifu2x-caffe](https://github.com/lltcggie/waifu2x-caffe)、[cuDNN](https://developer.nvidia.com/rdp/cudnn-download)、[Waifu2x-Extension-GUI](https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases)
+- [Waifu2x-Extension-GUI](https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases)
 - [KMS Tools](https://www.solidfiles.com/folder/bd7165a0d4/)
 - [Open Broadcaster Software](https://obsproject.com/download)
 - [UltraISO](https://www.ghpym.com/ultraiso.html)
@@ -274,7 +287,6 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 - [rufus](https://github.com/pbatard/rufus/releases)
 - [Realtek Audio Control(UWP)](https://www.microsoft.com/zh-cn/p/realtek-audio-control/9p2b8mcsvpln)(Only valid when the UAD version of the driver is installed)
 - [Resilio Sync](https://www.resilio.com/platforms/desktop/)
-- [格式工厂](https://www.423down.com/1072.html)
 - [CrystalDiskInfo & CrystalDiskMark](https://crystalmark.info/en/download/)
 - [Firewall App Blocker](https://www.sordum.org/8125/firewall-app-blocker-fab-v1-7/)
 - [GPU-Z](https://www.423down.com/3675.html)
@@ -299,7 +311,7 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 - [DiskGenius](https://www.423down.com/8073.html)
 
 ## Developer tools
-- [AdoptOpenJDK](https://adoptopenjdk.net/index.html)(totally free)、[JDK](https://www.oracle.com/java/technologies/javase-downloads.html)(the King)、[RedHat OpenJDK](https://developers.redhat.com/products/openjdk/download)(only free for development)
+- [AdoptOpenJDK](https://adoptopenjdk.net/index.html)(totally free)、[JDK](https://www.oracle.com/java/technologies/javase-downloads.html)(the King)、[RedHat OpenJDK](https://developers.redhat.com/products/openjdk/download)(only free for development)、[Liberica OpenJDK](https://bell-sw.com/pages/downloads/)(full version contains javafx)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [(pin8)IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows)、[JetBrains Mono](https://www.jetbrains.com/lp/mono/)、[patch](https://zhile.io/)
@@ -357,12 +369,9 @@ Tools —— Translation —— 常规 —— √ 使用translate.google.com ；
 
 #### Not Using
 - ~~[Bookmark Sidebar](https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh)~~
-- ~~[Chrono Downloader](https://chrome.google.com/webstore/detail/chrono-download-manager/mciiogijehkdemklbdcbfkefimifhecn)~~
 - ~~[Country Flags & IP Whois](https://chrome.google.com/webstore/detail/country-flags-ip-whois/bffjckjhidlcnenenacdahhpbacpgapo)~~
-- ~~[Download Manager](https://chrome.google.com/webstore/detail/download-manager/ofpglhlcdbjdhlacgbljnildhajfmlei)~~
 - ~~[FeHelper](https://chrome.google.com/webstore/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad)~~
 - ~~[FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)~~
-- ~~[QZoneExport](https://github.com/ShunCai/QZoneExport/releases)~~、~~[QQ空间导出助手](https://chrome.google.com/webstore/detail/qq%E7%A9%BA%E9%97%B4%E5%AF%BC%E5%87%BA%E5%8A%A9%E6%89%8B/aofadimegphfgllgjblddapiaojbglhf)~~
 - ~~[Similar Sites](https://chrome.google.com/webstore/detail/similar-sites-discover-re/necpbmbhhdiplmfhmjicabdeighkndkn)~~
 - ~~[Steam Inventory Helper](https://chrome.google.com/webstore/detail/steam-inventory-helper/cmeakgjggjdlcpncigglobpjbkabhmjl)~~
 
