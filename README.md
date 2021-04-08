@@ -263,9 +263,9 @@ options
 - [Groupy](https://store.steampowered.com/app/912170)
 - [Fences](https://store.steampowered.com/app/607380)
 - [Start10](https://store.steampowered.com/app/620050/Start10)
-- [(pin1)格式工厂](https://www.423down.com/1072.html) 、[XMedia Recode](https://www.xmedia-recode.de/en/download.php)
+- [(pin1)格式工厂](https://www.423down.com/1072.html) 
 - [(pin2)Microsoft Sticky Notes](https://www.microsoft.com/en-us/p/microsoft-sticky-notes/9nblggh4qghw)
-- [(pin3)Fluent Reader](https://github.com/yang991178/fluent-reader)
+- [(pin3)Shotcut](https://github.com/mltframework/shotcut/releases)
 - [(pin4)Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
 - [(pin5)WinSCP](https://winscp.net/eng/download.php)
 - [(pin6)ScreenToGif](https://github.com/NickeManarin/ScreenToGif/releases)
@@ -277,7 +277,7 @@ options
 - [Everything](https://www.voidtools.com/zh-cn/downloads/)
 - [Snipaste](https://www.snipaste.com/)
 - [PotPlayer](https://potplayer.daum.net/)
-- [Honeyview](http://www.bandisoft.com/honeyview/)、[qimgv](https://github.com/easymodo/qimgv/releases)
+- [Honeyview](http://www.bandisoft.com/honeyview/)
 - [K-Lite Codec Pack Mega](http://www.codecguide.com/download_k-lite_codec_pack_mega.htm)
 - [旺信](https://alimarket.taobao.com/markets/qnww/portal-group/ww/download)
 - [SteamAchievementManager](https://github.com/gibbed/SteamAchievementManager/releases)、[SAM-Auto](https://github.com/unencouraged/SAM-Auto/releases)
@@ -308,10 +308,8 @@ options
 - [KMS Tools](https://www.solidfiles.com/folder/bd7165a0d4/)
 - [Open Broadcaster Software](https://obsproject.com/download)
 - [UltraISO](https://www.ghpym.com/ultraiso.html)
-- [drawio](https://github.com/jgraph/drawio-desktop/releases)
+- [drawio](https://github.com/jgraph/drawio)
 - [VMware Workstation](https://www.ghpym.com/workstationlite.html)
-- [Discord](https://discordapp.com/download)
-- [LINE](https://line.me/zh-hant/)
 - [rufus](https://github.com/pbatard/rufus/releases)
 - [Realtek Audio Control(UWP)](https://www.microsoft.com/zh-cn/p/realtek-audio-control/9p2b8mcsvpln)(Only valid when the UAD version of the driver is installed)
 - [Resilio Sync](https://www.resilio.com/platforms/desktop/)
@@ -322,10 +320,6 @@ options
 - [SSD-Z](https://www.423down.com/4748.html)
 - 显示器色域检测v2.2.1(图拉丁版)
 - [BestTrace](https://www.ipip.net/product/client.html)
-- [IObit Uninstaller](https://www.423down.com/7732.html)
-- [MediaInfo](https://mediaarea.net/en/MediaInfo)
-- [剪映](https://lv.ulikecam.com/)、[喵影工厂(Filmora)](https://www.423down.com/9357.html)
-- [冰点文库下载器](https://www.423down.com/708.html)
 
 #### Drivers
 - [Driver Booster](https://www.423down.com/10421.html)
@@ -371,6 +365,7 @@ options
 - [Awesome Screenshot](https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj)
 - [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 - [RSSHub Radar](https://chrome.google.com/webstore/detail/rsshub-radar/kefjpfngnndepjbopdmoebkipbgkggaa)
+- [RSS Reader Extension (by Inoreader)](https://chrome.google.com/webstore/detail/rss-reader-extension-by-i/kfimphpokifbjgmjflanmfeppcjimgah)
 - [Google Translate](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb)
 - [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)
 - [Twitter Media Downloader](https://chrome.google.com/webstore/detail/twitter-media-downloader/cblpjenafgeohmnjknfhpdbdljfkndig)
@@ -378,7 +373,7 @@ options
 - [SingleFile](https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle)
 - [魂签](https://github.com/inu1255/soulsign-chrome)
 - [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-- [Violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)、[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+- [Violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
 
 #### Unpinned
 - [Adobe Acrobat](https://chrome.google.com/webstore/detail/adobe-acrobat/efaidnbmnnnibpcajpcglclefindmkaj)
@@ -403,6 +398,7 @@ options
 - ~~[FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)~~
 - ~~[Similar Sites](https://chrome.google.com/webstore/detail/similar-sites-discover-re/necpbmbhhdiplmfhmjicabdeighkndkn)~~
 - ~~[Steam Inventory Helper](https://chrome.google.com/webstore/detail/steam-inventory-helper/cmeakgjggjdlcpncigglobpjbkabhmjl)~~
+- ~~[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
 
 
 ## 系统美化(Unstable)
