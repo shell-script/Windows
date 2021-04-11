@@ -1,10 +1,10 @@
 <service>
-  <id>QQCacheCleaner</id>
-  <name>清理QQ缓存</name>
-  <description>清理QQ缓存</description>
-  <executable>QQCacheCleaner.bat</executable>
+  <id>GeoFileUpdater</id>
+  <name>Geo文件更新器</name>
+  <description>Geo文件更新器</description>
+  <executable>GeoFileUpdater.bat</executable>
   <logmode>rotate</logmode>
-  <logpath>S:\软件\杂项\清理QQ缓存\log</logpath>
+  <logpath>S:\软件\杂项\Geo文件更新器\log</logpath>
   <priority>Normal</priority>
   <startmode>Automatic</startmode>
   <delayedAutoStart>true</delayedAutoStart>

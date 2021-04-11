@@ -33,7 +33,7 @@ msconfig
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 
-### 一键解除所有UWP应用的网络隔离（CMD指令/Powershell指令）：
+### 一键解除所有UWP应用的网络隔离（CMD指令/PowerShell指令）：
 [Windows Loopback Exemption Manager](https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager)(微软官方出品)、[Windows 8 AppContainer Loopback Utility](https://www.telerik.com/fiddler/add-ons)(第三方软件)
 
 ```cmd
