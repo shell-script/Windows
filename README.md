@@ -243,6 +243,9 @@ options
 - [搜狗输入法](https://pinyin.sogou.com/)
 - [Bandizip](https://www.bandisoft.com/bandizip/dl/)、[patch](https://www.423down.com/9735.html)、[7-Zip](https://www.7-zip.org/)
 - [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)、[v2rayN](https://github.com/2dust/v2rayN/releases)
+- [Chrome](https://www.google.com/intl/zh-CN/chrome/browser/thankyou.html?platform=win64&standalone=1&statcb=1&installdataindex=defaultbrowser)、[FireFox](https://www.mozilla.org/zh-CN/firefox/all/#product-desktop-release)
+- [Typora](https://typora.io/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [火绒](https://www.huorong.cn/person5.html)
 - [GeForce Drivers](https://www.nvidia.cn/geforce/drivers/)
 - [Logitech Gaming Software](https://support.logi.com/hc/zh-cn/articles/360025298053)
@@ -254,8 +257,7 @@ options
 - [DriverStoreExplorer](https://github.com/lostindark/DriverStoreExplorer/releases)
 - [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor/releases)
 - [OpenHashTab](https://github.com/namazso/OpenHashTab/releases)
-- [EmEditor](https://www.423down.com/7569.html)
-- [Chrome](https://www.google.com/intl/zh-CN/chrome/browser/thankyou.html?platform=win64&standalone=1&statcb=1&installdataindex=defaultbrowser)、[FireFox](https://www.mozilla.org/zh-CN/firefox/all/#product-desktop-release)
+- [Everything](https://www.voidtools.com/zh-cn/downloads/)
 - [Office Tool Plus](https://github.com/YerongAI/Office-Tool/releases)
 - [QQ](https://im.qq.com/download/)、[NtrQQ](https://github.com/NtrQQ/download/releases)、[iYa.App 软件交流社区](https://iya.app/)
 - [Steam](https://store.steampowered.com/about/)
@@ -274,7 +276,6 @@ options
 - [gsudo](https://github.com/gerardog/gsudo)
 - [youtube-dl](https://github.com/ytdl-org/youtube-dl/releases)
 - [FFmpeg(GPL ver.)](https://github.com/BtbN/FFmpeg-Builds/releases)
-- [Everything](https://www.voidtools.com/zh-cn/downloads/)
 - [Snipaste](https://www.snipaste.com/)
 - [PotPlayer](https://potplayer.daum.net/)
 - [Honeyview](http://www.bandisoft.com/honeyview/)
@@ -283,7 +284,6 @@ options
 - [SteamAchievementManager](https://github.com/gibbed/SteamAchievementManager/releases)、[SAM-Auto](https://github.com/unencouraged/SAM-Auto/releases)
 - [Adobe software series](https://weibo.com/1112829033)
 - [百度云](http://pan.baidu.com/download)
-- [Typora](https://typora.io/)
 - [CCleaner](https://www.423down.com/716.html)、[Winapp2](https://github.com/MoscaDotTo/Winapp2)
 - [XMind](https://www.ghpym.com/xmindzen.html)
 - [Telegram](https://telegram.org/)
@@ -298,6 +298,9 @@ options
 - 来自设备制造商的 HEVC 视频扩展(ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq)
 
 ## Software List(Optional)
+
+- [EmEditor](https://www.423down.com/7569.html)
+
 - [AIDA64](https://www.423down.com/887.html)
 - [AS SSD Benchmark](https://www.423down.com/6751.html)
 - [Cheat Engine](https://cheatengine.org/)
@@ -335,7 +338,6 @@ options
 
 ## Developer tools
 - [AdoptOpenJDK](https://adoptopenjdk.net/index.html)(totally free)、[JDK](https://www.oracle.com/java/technologies/javase-downloads.html)(the King)、[RedHat OpenJDK](https://developers.redhat.com/products/openjdk/download)(only free for development)、[Liberica OpenJDK](https://bell-sw.com/pages/downloads/)(full version contains javafx)
-- [Visual Studio Code](https://code.visualstudio.com/)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [(pin8)IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows)、[JetBrains Mono](https://www.jetbrains.com/lp/mono/)、[patch](https://zhile.io/)
 - [git](https://git-scm.com/downloads)
