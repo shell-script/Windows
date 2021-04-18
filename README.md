@@ -112,7 +112,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
 ;取消我的电脑"桌面"文件夹
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
-;取消我的电脑"音乐"文件夹?
+;取消我的电脑"音乐"文件夹
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
 ;取消我的电脑"下载"文件夹
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
@@ -300,7 +300,6 @@ options
 ## Software List(Optional)
 
 - [EmEditor](https://www.423down.com/7569.html)
-
 - [AIDA64](https://www.423down.com/887.html)
 - [AS SSD Benchmark](https://www.423down.com/6751.html)
 - [Cheat Engine](https://cheatengine.org/)
