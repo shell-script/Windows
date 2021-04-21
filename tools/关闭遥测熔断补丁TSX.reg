@@ -10,4 +10,4 @@ Windows Registry Editor Version 5.00
 "FeatureSettingsOverrideMask"=dword:00000003
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
-"DisableTsx"=dword:00000000
+"DisableTsx"=dword:00000001

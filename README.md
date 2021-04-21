@@ -89,9 +89,9 @@ Override software rendering list
 Smooth Scrolling
 GPU rasterization
 Zero-copy rasterizer
-Enable native notifications.
+Enable system notifications.
 TLS 1.3 Early Data
-Tab Groups Collapse
+Password import
 Parallel downloading
 Tab Hover Card Images
 Enable sharing page via QR Code

@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1618778189335,
+  "timeStamp": 1619036602383,
   "version": "1.34.0",
   "userSettings": {
     "cloudStorageEnabled": true,
@@ -20,6 +20,8 @@
     "adguard-spyware",
     "urlhaus-1",
     "adguard-annoyance",
+    "adguard-social",
+    "fanboy-thirdparty_social",
     "plowe-0",
     "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt"
   ],
