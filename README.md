@@ -242,7 +242,6 @@ options
 - [HWID_KMS38](http://bbs.pcbeta.com/viewthread-1810482-1-1.html)
 - [搜狗输入法](https://pinyin.sogou.com/)
 - [Bandizip](https://www.bandisoft.com/bandizip/dl/)、[patch](https://www.423down.com/9735.html)、[7-Zip](https://www.7-zip.org/)
-- [Qv2ray](https://github.com/Qv2ray/Qv2ray/releases)、[v2rayN](https://github.com/2dust/v2rayN/releases)
 - [Chrome](https://www.google.com/intl/zh-CN/chrome/browser/thankyou.html?platform=win64&standalone=1&statcb=1&installdataindex=defaultbrowser)、[FireFox](https://www.mozilla.org/zh-CN/firefox/all/#product-desktop-release)
 - [Typora](https://typora.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -265,7 +264,7 @@ options
 - [Groupy](https://store.steampowered.com/app/912170)
 - [Fences](https://store.steampowered.com/app/607380)
 - [Start10](https://store.steampowered.com/app/620050/Start10)
-- [(pin1)格式工厂](https://www.423down.com/1072.html) 
+- [(pin1)QuickCut](https://github.com/HaujetZhao/QuickCut)、[格式工厂](https://www.423down.com/1072.html) 
 - [(pin2)Microsoft Sticky Notes](https://www.microsoft.com/en-us/p/microsoft-sticky-notes/9nblggh4qghw)
 - [(pin3)Shotcut](https://github.com/mltframework/shotcut/releases)
 - [(pin4)Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
@@ -360,7 +359,7 @@ options
 - [When the Night Falls (yellow neon; with rain)](https://chrome.google.com/webstore/detail/when-the-night-falls-yell/dhdibmnepnffnnlgldgkdembnmnhmdbc)
 
 #### Pinned
-- [Wrona History Menu](https://chrome.google.com/webstore/detail/wrona-history-menu/fhibbdoaickjpmmhemkompghjjmpjdpj)
+- [Tree Style History](https://chrome.google.com/webstore/detail/tree-style-history/khcenbpnhbeplojhaolbpldmoppicold)
 - [Tab Muter](https://chrome.google.com/webstore/detail/tab-muter/bnclejfcblondkjliiblkojdeloomadd)
 - [哔哩哔哩助手](https://chrome.google.com/webstore/detail/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8A%A9%E6%89%8B%EF%BC%9Abilibilicom-%E7%BB%BC%E5%90%88%E8%BE%85%E5%8A%A9%E6%89%A9%E5%B1%95/kpbnombpnpcffllnianjibmpadjolanh)
 - [Awesome Screenshot](https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj)
@@ -399,6 +398,7 @@ options
 - ~~[Similar Sites](https://chrome.google.com/webstore/detail/similar-sites-discover-re/necpbmbhhdiplmfhmjicabdeighkndkn)~~
 - ~~[Steam Inventory Helper](https://chrome.google.com/webstore/detail/steam-inventory-helper/cmeakgjggjdlcpncigglobpjbkabhmjl)~~
 - ~~[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
+- ~~[Wrona History Menu](https://chrome.google.com/webstore/detail/wrona-history-menu/fhibbdoaickjpmmhemkompghjjmpjdpj)~~
 - ~~[懒人记单词](https://chrome.google.com/webstore/detail/%E6%87%92%E4%BA%BA%E8%AE%B0%E5%8D%95%E8%AF%8D/bfpdfenfogbajbgoacemgemdoojelbfi)~~
 
 ## 系统美化(Unstable)
