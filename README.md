@@ -264,7 +264,7 @@ options
 - [Groupy](https://store.steampowered.com/app/912170)
 - [Fences](https://store.steampowered.com/app/607380)
 - [Start10](https://store.steampowered.com/app/620050/Start10)
-- [(pin1)QuickCut](https://github.com/HaujetZhao/QuickCut)、[格式工厂](https://www.423down.com/1072.html) 
+- [(pin1)QuickCut](https://github.com/HaujetZhao/QuickCut)、[格式工厂](https://www.423down.com/1072.html)、[XMedia Recode](https://www.xmedia-recode.de/en/download_64bit.php)、[ShanaEncoder](https://shana.pe.kr/shanaencoder_download)
 - [(pin2)Microsoft Sticky Notes](https://www.microsoft.com/en-us/p/microsoft-sticky-notes/9nblggh4qghw)
 - [(pin3)Shotcut](https://github.com/mltframework/shotcut/releases)
 - [(pin4)Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
@@ -366,7 +366,6 @@ options
 - [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 - [RSS Reader Extension (by Inoreader)](https://chrome.google.com/webstore/detail/rss-reader-extension-by-i/kfimphpokifbjgmjflanmfeppcjimgah)
 - [Twitter Media Downloader](https://chrome.google.com/webstore/detail/twitter-media-downloader/cblpjenafgeohmnjknfhpdbdljfkndig)
-- [Downloader for Instagram](https://www.crx4chrome.com/crx/86579/)
 - [SingleFile](https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle)
 - [魂签](https://github.com/inu1255/soulsign-chrome)
 - [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
@@ -389,11 +388,13 @@ options
 #### Not Using
 - ~~[Axure RP Extension for Chrome](https://chrome.google.com/webstore/detail/axure-rp-extension-for-ch/dogkpdfcklifaemcdfbildhcofnopogp)~~
 - ~~[Bookmark Sidebar](https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh)~~
+- ~~[Downloader for Instagram](https://www.crx4chrome.com/crx/86579/)~~
 - ~~[EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)~~
 - ~~[Country Flags & IP Whois](https://chrome.google.com/webstore/detail/country-flags-ip-whois/bffjckjhidlcnenenacdahhpbacpgapo)~~
 - ~~[FeHelper](https://chrome.google.com/webstore/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad)~~
 - ~~[FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)~~
 - ~~[Google Translate](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb)~~
+- ~~[Octoman微博备份](https://chrome.google.com/webstore/detail/octoman%E5%BE%AE%E5%8D%9A%E5%A4%87%E4%BB%BD/pojodomdlpobompicdllljgiomnfpmho)~~
 - ~~[RSSHub Radar](https://chrome.google.com/webstore/detail/rsshub-radar/kefjpfngnndepjbopdmoebkipbgkggaa)~~
 - ~~[Similar Sites](https://chrome.google.com/webstore/detail/similar-sites-discover-re/necpbmbhhdiplmfhmjicabdeighkndkn)~~
 - ~~[Steam Inventory Helper](https://chrome.google.com/webstore/detail/steam-inventory-helper/cmeakgjggjdlcpncigglobpjbkabhmjl)~~
