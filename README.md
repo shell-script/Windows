@@ -405,6 +405,7 @@ options
 ## 系统美化(Unstable)
 - [更纱黑体(Iosevka+思源黑体)](https://github.com/be5invis/Sarasa-Gothic/releases)
 - [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono/releases)
+- [阿里巴巴普惠体](https://done.alibabadesign.com/puhuiti2.0)
 - [致美化](https://zhutix.com/)
 - [noMeiryoUI](http://tatsu.life.coocan.jp/MySoft/index.html)
 - [MacType](https://www.mactype.net/)
