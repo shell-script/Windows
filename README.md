@@ -379,6 +379,7 @@ options
 - [Git Master](https://github.com/ineo6/git-master)
 - [Refined GitHub](https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
 - [ScrollAnywhere](https://chrome.google.com/webstore/detail/scrollanywhere/jehmdpemhgfgjblpkilmeoafmkhbckhi)
+- [Show YouTube comments while watching](https://github.com/tanguykurylo/show-youtube-comments)
 - [Steam Database](https://chrome.google.com/webstore/detail/steam-database/kdbmhfkmnlmbkgbabkdealhhbfhlmmon)
 - [TabCopy](https://chrome.google.com/webstore/detail/tabcopy/micdllihgoppmejpecmkilggmaagfdmb)
 - [YouTube Live Chat Flow](https://github.com/fiahfy/youtube-live-chat-flow/releases)
