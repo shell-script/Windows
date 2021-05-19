@@ -315,7 +315,6 @@ options
 - [Realtek Audio Control(UWP)](https://www.microsoft.com/zh-cn/p/realtek-audio-control/9p2b8mcsvpln)(Only valid when the UAD version of the driver is installed)
 - [Resilio Sync](https://www.resilio.com/platforms/desktop/)
 - [CrystalDiskInfo & CrystalDiskMark](https://crystalmark.info/en/download/)
-- [Firewall App Blocker](https://www.sordum.org/8125/firewall-app-blocker-fab-v1-7/)
 - [GPU-Z](https://www.423down.com/3675.html)
 - [NatTypeTester](https://github.com/HMBSbige/NatTypeTester/releases)
 - [SSD-Z](https://www.423down.com/4748.html)
