@@ -90,15 +90,12 @@ Smooth Scrolling
 GPU rasterization
 Zero-copy rasterizer
 Enable system notifications.
-TLS 1.3 Early Data
 Password import
 Parallel downloading
 Tab Hover Card Images
-Enable sharing page via QR Code
+Desktop Sharing Hub in Omnibox
 Skia API for compositing
-Heavy Ad Intervention
 Enforce deprecation of legacy TLS versions
-Enable Tab Search
 ```
 
 ### 去除Win10默认显示的一些目录
