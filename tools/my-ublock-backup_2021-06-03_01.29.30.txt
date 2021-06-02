@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1621883926817,
+  "timeStamp": 1622654970255,
   "version": "1.35.2",
   "userSettings": {
     "cloudStorageEnabled": true,
@@ -35,7 +35,8 @@
     "# opera-scheme",
     "# vivaldi-scheme",
     "# wyciwyg-scheme",
-    "bilibili.com"
+    "bilibili.com",
+    "prts.wiki"
   ],
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
