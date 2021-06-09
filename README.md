@@ -122,6 +122,8 @@ Windows Registry Editor Version 5.00
 ### youtube-dl设置文件目录：C:/Users/username/youtube-dl.conf
 ```shell
 --ignore-errors
+--external-downloader aria2c
+--external-downloader-args "-x 16 -k 1M"
 --proxy http://127.0.0.1:2081/
 # --proxy socks5://127.0.0.1:2080/ 直播推流不支持socks5
 --hls-prefer-ffmpeg
@@ -267,8 +269,9 @@ options
 - [(pin6)ScreenToGif](https://github.com/NickeManarin/ScreenToGif/releases)
 - [(pin7)网易云音乐](https://music.163.com/#/download)
 - [(pin10)Windows Calculator](https://www.microsoft.com/en-us/p/windows-calculator/9wzdncrfhvn5)
-- [youtube-dl](https://github.com/ytdl-org/youtube-dl/releases)
+- [aria2](https://github.com/aria2/aria2/releases)
 - [FFmpeg(GPL ver.)](https://github.com/BtbN/FFmpeg-Builds/releases)
+- [youtube-dl](https://github.com/ytdl-org/youtube-dl/releases)
 - [Snipaste](https://www.snipaste.com/)
 - [PotPlayer](https://potplayer.daum.net/)
 - [Honeyview](http://www.bandisoft.com/honeyview/)
