@@ -174,19 +174,19 @@ Appearance & Behavior —— System Settings —— × Reopen last project on st
 Appearance & Behavior —— System Settings —— HTTP Proxy —— Manual proxy configuration —— √ HTTP ; Host name：127.0.0.1 ; Port number：2081
 【滚轮修改字体大小】
 Editor —— General —— √ Change font size(Zoom) with Ctrl+Mouse Wheel
-Editor —— General —— Scrolling —— √ Enable smooth scrolling (default on 2021.1) —— Move caret, minimize editor scrolling
+Editor —— General —— Scrolling —— √ Enable smooth scrolling (default on 2021.1.2) —— Move caret, minimize editor scrolling
 【自动导包】[项目设置]
-Editor —— General —— Auto Import —— Insert imports on paste：Always (default on 2021.1) ; √ Add Unambiguous imports on the fly ; √ Optimize imports on the fly
+Editor —— General —— Auto Import —— Insert imports on paste：Always (default on 2021.1.2) ; √ Add Unambiguous imports on the fly ; √ Optimize imports on the fly
 【设置行号显示】
-Editor —— General —— Appearance —— √ Show line numbers (default on 2021.1) ; √ Show method separators
+Editor —— General —— Appearance —— √ Show line numbers (default on 2021.1.2) ; √ Show method separators
 【忽略大小写】
 Editor —— General —— Code Completion —— × Match case
 【取消单行显示标签页】
 Editor —— General —— Editor Tabs —— Show tabs in Multiple rows —— √ Show pinned tabs in a separate row
 【悬浮提示】
-Editor —— Code Editing —— √ Show quick documentation on mouse move (default on 2021.1)
+Editor —— Code Editing —— √ Show quick documentation on mouse move (default on 2021.1.2)
 【字体】
-Editor —— Font —— Font: JetBrains Mono —— Size: 13 —— Line height: 1.2 (default on 2021.1)
+Editor —— Font —— Font: JetBrains Mono —— Size: 13 —— Line height: 1.2 (default on 2021.1.2)
 Editor —— Font —— Fallback font：Sarasa Mono Slab SC
 【自动换行】
 Editor —— Code Style —— √ Wrap on typing 
