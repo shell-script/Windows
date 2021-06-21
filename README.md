@@ -44,6 +44,17 @@ FOR /F "tokens=11 delims=\" %p IN ('REG QUERY "HKCU\Software\Classes\Local Setti
 Get-ChildItem -Path Registry::"HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings\" -name | ForEach-Object {CheckNetIsolation.exe LoopbackExempt -a -p="$_"}
 ```
 
+### CMD/PowerShell代理设置：
+```cmd
+set http_proxy=http://127.0.0.1:2081
+set https_proxy=http://127.0.0.1:2081
+```
+
+```powershell
+$env:http_proxy="http://127.0.0.1:2081"
+$env:https_proxy="http://127.0.0.1:2081"
+```
+
 ### git代理设置：
 
 ```shell
