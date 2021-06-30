@@ -250,7 +250,7 @@ options
 ## Software List(Indispensable)
 - [微软常用运行库](https://www.ghpym.com/yxkhj.html)、[Alter version](https://github.com/abbodi1406/vcredist/releases)
 - [HWID_KMS38](http://bbs.pcbeta.com/viewthread-1810482-1-1.html)
-- [v2rayN](https://github.com/2dust/v2rayN/releases)、[Qv2ray](https://github.com/Qv2ray/Qv2ray/actions/workflows/build-qv2ray-cmake.yml)
+- [v2rayN](https://github.com/2dust/v2rayN/releases)
 - [搜狗输入法](https://pinyin.sogou.com/)
 - [Bandizip](https://www.bandisoft.com/bandizip/dl/)、[patch](https://www.423down.com/9735.html)、[7-Zip](https://www.7-zip.org/)、[7-Zip-zstd](https://github.com/mcmilk/7-Zip-zstd/releases)
 - [Chrome](https://www.google.com/intl/zh-CN/chrome/browser/thankyou.html?platform=win64&standalone=1&statcb=1&installdataindex=defaultbrowser)、[FireFox](https://www.mozilla.org/zh-CN/firefox/all/#product-desktop-release)
