@@ -4,7 +4,7 @@
   <description>清理QQ缓存</description>
   <executable>QQCacheCleaner.bat</executable>
   <logmode>rotate</logmode>
-  <logpath>S:\软件\杂项\清理QQ缓存\log</logpath>
+  <logpath>log</logpath>
   <priority>Normal</priority>
   <startmode>Automatic</startmode>
   <delayedAutoStart>true</delayedAutoStart>

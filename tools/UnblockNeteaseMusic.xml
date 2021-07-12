@@ -5,7 +5,7 @@
   <executable>UnblockNeteaseMusic.exe</executable>
   <arguments>-p 11111</arguments>
   <logmode>rotate</logmode>
-  <logpath>S:\Program Files\UnblockNeteaseMusic\UnblockNeteaseMusic\log</logpath>
+  <logpath>log</logpath>
   <priority>Normal</priority>
   <startmode>Automatic</startmode>
   <delayedAutoStart>true</delayedAutoStart>

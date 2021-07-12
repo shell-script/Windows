@@ -4,7 +4,7 @@
   <description>Geo文件更新器</description>
   <executable>GeoFileUpdater.bat</executable>
   <logmode>rotate</logmode>
-  <logpath>S:\软件\杂项\Geo文件更新器\log</logpath>
+  <logpath>log</logpath>
   <priority>Normal</priority>
   <startmode>Automatic</startmode>
   <delayedAutoStart>true</delayedAutoStart>
