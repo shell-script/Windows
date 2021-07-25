@@ -400,20 +400,13 @@ options
 - [购物党自动比价工具](https://chrome.google.com/webstore/detail/%E8%B4%AD%E7%89%A9%E5%85%9A%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/jgphnjokjhjlcnnajmfjlacjnjkhleah)
 
 #### Not Using
-- ~~[Awesome Screenshot](https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj)~~
-- ~~[Axure RP Extension for Chrome](https://chrome.google.com/webstore/detail/axure-rp-extension-for-ch/dogkpdfcklifaemcdfbildhcofnopogp)~~
 - ~~[Bookmark Sidebar](https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh)~~
-- ~~[Downloader for Instagram](https://www.crx4chrome.com/crx/86579/)~~
-- ~~[Country Flags & IP Whois](https://chrome.google.com/webstore/detail/country-flags-ip-whois/bffjckjhidlcnenenacdahhpbacpgapo)~~
 - ~~[FeHelper](https://chrome.google.com/webstore/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad)~~
-- ~~[Google Translate](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb)~~
 - ~~[Octoman微博备份](https://chrome.google.com/webstore/detail/octoman%E5%BE%AE%E5%8D%9A%E5%A4%87%E4%BB%BD/pojodomdlpobompicdllljgiomnfpmho)~~
-- ~~[RSSHub Radar](https://chrome.google.com/webstore/detail/rsshub-radar/kefjpfngnndepjbopdmoebkipbgkggaa)~~
 - ~~[Similar Sites](https://chrome.google.com/webstore/detail/similar-sites-discover-re/necpbmbhhdiplmfhmjicabdeighkndkn)~~
 - ~~[Steam Inventory Helper](https://chrome.google.com/webstore/detail/steam-inventory-helper/cmeakgjggjdlcpncigglobpjbkabhmjl)~~
 - ~~[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
 - ~~[Wrona History Menu](https://chrome.google.com/webstore/detail/wrona-history-menu/fhibbdoaickjpmmhemkompghjjmpjdpj)~~
-- ~~[懒人记单词](https://chrome.google.com/webstore/detail/%E6%87%92%E4%BA%BA%E8%AE%B0%E5%8D%95%E8%AF%8D/bfpdfenfogbajbgoacemgemdoojelbfi)~~
 
 ## 系统美化(Unstable)
 - [更纱黑体(Iosevka+思源黑体)](https://github.com/be5invis/Sarasa-Gothic/releases)
