@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1627247256557,
-  "version": "1.36.2",
+  "timeStamp": 1627667640211,
+  "version": "1.37.2",
   "userSettings": {
     "cloudStorageEnabled": true,
     "externalLists": "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt",
