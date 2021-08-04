@@ -93,6 +93,11 @@ yarn config set proxy http://127.0.0.1:2081
 yarn config set https-proxy http://127.0.0.1:2081
 yarn config set registry https://registry.npm.taobao.org
 ```
+### golang代理设置
+```shell
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
+```
 
 ### Chrome浏览器实验性功能：
 ```shell
