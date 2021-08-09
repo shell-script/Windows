@@ -254,7 +254,7 @@ options
 
 ## Software List(Indispensable)
 - [微软常用运行库](https://www.ghpym.com/yxkhj.html)、[Alter version](https://github.com/abbodi1406/vcredist/releases)
-- [HWID_KMS38](http://bbs.pcbeta.com/viewthread-1810482-1-1.html)
+- [HWID_KMS38](http://bbs.pcbeta.com/viewthread-1810482-1-1.html)、[HEU KMS Activator](https://www.423down.com/1202.html)、[CMWTAT_Digital_Edition](https://github.com/TGSAN/CMWTAT_Digital_Edition/releases)、[KMS Tools](https://www.solidfiles.com/folder/bd7165a0d4/)
 - [v2rayN](https://github.com/2dust/v2rayN/releases)、[Qv2ray](https://github.com/Qv2ray/Qv2ray/actions/workflows/build-qv2ray-cmake.yml)
 - [搜狗输入法](https://pinyin.sogou.com/)
 - [Bandizip](https://www.bandisoft.com/bandizip/dl/)、[patch](https://www.423down.com/9735.html)、[7-Zip](https://www.7-zip.org/)、[7-Zip-zstd](https://github.com/mcmilk/7-Zip-zstd/releases)
@@ -320,7 +320,6 @@ options
 - [DISM++](http://www.chuyu.me/zh-Hans/index.html)、[wsusscn3.cab](https://github.com/Chuyu-Team/Dism-Multi-language/releases)
 - [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere)、[Fiddler Classic](https://www.telerik.com/download/fiddler)
 - [Waifu2x-Extension-GUI](https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases)
-- [KMS Tools](https://www.solidfiles.com/folder/bd7165a0d4/)
 - [Open Broadcaster Software](https://obsproject.com/download)
 - [UltraISO](https://www.ghpym.com/ultraiso.html)
 - [drawio](https://github.com/jgraph/drawio)
