@@ -100,11 +100,14 @@ GPU rasterization
 Zero-copy rasterizer
 Enable system notifications.
 Password import
+Reading List
+Reading list 'New' badge promo
 Parallel downloading
 Tab Hover Card Images
 Desktop Sharing Hub in Omnibox
 Skia API for compositing
 Enforce deprecation of legacy TLS versions
+Copy Link To Text
 ```
 
 ### 去除Win10默认显示的一些目录
