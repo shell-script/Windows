@@ -343,7 +343,7 @@ options
 - [DiskGenius](https://www.423down.com/8073.html)
 
 ## Developer tools
-- [AdoptOpenJDK](https://adoptopenjdk.net/index.html)(totally free)、[JDK](https://www.oracle.com/java/technologies/javase-downloads.html)(the King)、[Liberica OpenJDK](https://bell-sw.com/pages/downloads/)(full version contains javafx)
+- [Adoptium](https://adoptium.net/)(totally free)、[JDK](https://www.oracle.com/java/technologies/javase-downloads.html)(the King)、[Liberica OpenJDK](https://bell-sw.com/pages/downloads/)(full version contains javafx)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [gsudo](https://github.com/gerardog/gsudo)
 - [(pin4)Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
