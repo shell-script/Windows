@@ -69,7 +69,7 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:2080
 git config --global alias.lg "log --color --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
 
-git GPG相关设置：
+### git GPG相关设置：
 
 ```shell
 git config --global user.signingkey <密钥ID>
@@ -104,6 +104,16 @@ yarn config set registry https://registry.npm.taobao.org
 ```shell
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
+```
+
+### GPG常用指令：
+```shell
+gpg --expert --full-generate-key
+gpg --edit-key <密钥ID>
+gpg> key 1
+gpg> trust
+gpg> expire
+gpg> save
 ```
 
 ### Chrome浏览器实验性功能：
