@@ -109,6 +109,14 @@ go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
 ### GPG常用指令：
 ```shell
 gpg --expert --full-generate-key
+gpg --generate-revocation -ao revoke.pgp <密钥ID>
+gpg --list-keys/-k
+gpg --list-secret-keys/-K
+
+~/.gnupg/gpg.conf
+keyid-format 0xlong
+with-fingerprint
+
 gpg --edit-key <密钥ID>
 gpg> key 1
 gpg> trust
