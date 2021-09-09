@@ -182,9 +182,9 @@ gpg --delete-keys <密钥ID> # 删除公钥
 
 gpg --import [密钥文件/撤销凭证]
 
-gpg --sign input.txt  # 给文档签名
-gpg --clearsign input.txt # 生成ASCII格式签名
-gpg --armor --detach-sign input.txt # 签名和原文本分开
+gpg --sign --s2k-cipher-algo AES256 --s2k-digest-algo SHA512 input.txt  # 给文档签名
+gpg --clearsign --s2k-cipher-algo AES256 --s2k-digest-algo SHA512 input.txt # 生成ASCII格式签名
+gpg -ao --detach-sign --s2k-cipher-algo AES256 --s2k-digest-algo SHA512 input.txt # 签名和原文本分开
 gpg --verify input.txt.asc input.txt # 验证签名文件
 ```
 
