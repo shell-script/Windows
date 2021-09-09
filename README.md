@@ -1,11 +1,13 @@
 # Windows软件清单
 避免每次装机重头寻找历史安装过的软件，索性列一个清单，炼成半小时装机软件复原大法
 
-### 关闭虚拟内存
+<details>
+<summary>关闭虚拟内存</summary>
 ```shell
 设置 —— 系统 —— 关于 —— 高级系统设置 —— 性能设置 —— 高级 —— 虚拟内存 —— 更改 —— 无分页文件 —— 设置并确定
 ```
-
+</details>
+	
 ### 关闭休眠模式:
 ```shell
 powercfg -h off
@@ -128,6 +130,10 @@ gpg -ao public-key.txt --export <密钥ID> # 导出公钥
 gpg  -ao secret-key.txt --export-secret-key <密钥ID>! # 导出主私钥
 gpg  -ao sign-subkey.txt --export-secret-subkeys <密钥ID>! # 导出子私钥
 
+gpg --delete-secret-keys <密钥ID> # 删除私钥
+gpg --delete-keys <密钥ID> # 删除公钥
+
+gpg --import [密钥文件]
 ```
 
 ### Chrome浏览器实验性功能：
