@@ -63,6 +63,12 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:2080
 	proxy = socks5://127.0.0.1:2080
 ```
 
+### git log美化：
+
+```shell
+git config --global alias.lg "log --color --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+```
+
 ### pip代理功能稀烂，建议换阿里源：
 ```shell
 pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
