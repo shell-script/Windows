@@ -156,17 +156,13 @@ go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
 </details>
 
 <details>
-<summary>GPG常用指令</summary>
+<summary>GPG常用指令及配置文件</summary>
 
 ```shell
 gpg --expert --full-generate-key
 gpg --generate-revocation -ao revoke.pgp <密钥ID>
 gpg --list-keys/-k
 gpg --list-secret-keys/-K
-
-~/.gnupg/gpg.conf
-keyid-format 0xlong
-with-fingerprint
 
 gpg --edit-key <密钥ID>
 gpg> key 1
@@ -183,6 +179,25 @@ gpg --delete-secret-keys <密钥ID> # 删除私钥
 gpg --delete-keys <密钥ID> # 删除公钥
 
 gpg --import [密钥文件]
+
+gpg --sign input.txt  # 给文档签名
+gpg --clearsign input.txt # 生成ASCII格式签名
+gpg --armor --detach-sign input.txt # 签名和原文本分开
+```
+
+```shell
+C:/Users/username/.gnupg/gpg.conf
+keyid-format 0xlong
+with-fingerprint
+personal-cipher-preferences AES256
+personal-digest-preferences SHA512
+personal-compress-preferences Uncompressed
+default-preference-list SHA512 AES256 Uncompressed
+cert-digest-algo SHA256
+s2k-cipher-algo AES256
+s2k-digest-algo SHA512
+s2k-mode 3
+s2k-count 65011712
 ```
 
 </details>
