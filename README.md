@@ -159,30 +159,33 @@ go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
 <summary>GPG常用指令及配置文件</summary>
 
 ```shell
-gpg --expert --full-generate-key
-gpg --generate-revocation -ao revoke.pgp <密钥ID>
-gpg --list-keys/-k
-gpg --list-secret-keys/-K
+gpg --expert --full-generate-key # 生成密钥
+gpg --generate-revocation -ao revoke.pgp <密钥ID> # 生成撤销凭证
+gpg --list-keys/-k # 列出所有公钥
+gpg --list-secret-keys/-K # 列出所有私钥
 
 gpg --edit-key <密钥ID>
-gpg> key 1
-gpg> trust
-gpg> expire
-gpg> save
+gpg> list # 列出所有子密钥
+gpg> key {n} # 选择序号为n的子密钥
+gpg> trust # 设置信任度
+gpg> expire # 设置过期时间
+gpg> revkey # 撤销子密钥
+gpg> save # 保存
 
-gpg -ao public-key.txt --export <密钥ID> # 导出公钥
+gpg -ao public-key.asc --export <密钥ID> # 导出公钥
 # 注意这里最后要带上“!”， 不然会导出全部子密钥
-gpg  -ao secret-key.txt --export-secret-key <密钥ID>! # 导出主私钥
-gpg  -ao sign-subkey.txt --export-secret-subkeys <密钥ID>! # 导出子私钥
+gpg  -ao secret-key.asc --export-secret-key <密钥ID>! # 导出主私钥
+gpg  -ao sign-subkey.asc --export-secret-subkeys <密钥ID>! # 导出子私钥
 
 gpg --delete-secret-keys <密钥ID> # 删除私钥
 gpg --delete-keys <密钥ID> # 删除公钥
 
-gpg --import [密钥文件]
+gpg --import [密钥文件/撤销凭证]
 
 gpg --sign input.txt  # 给文档签名
 gpg --clearsign input.txt # 生成ASCII格式签名
 gpg --armor --detach-sign input.txt # 签名和原文本分开
+gpg --verify input.txt.asc input.txt # 验证签名文件
 ```
 
 ```shell
