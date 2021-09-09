@@ -3,32 +3,51 @@
 
 <details>
 <summary>关闭虚拟内存</summary>
+
 ```shell
 设置 —— 系统 —— 关于 —— 高级系统设置 —— 性能设置 —— 高级 —— 虚拟内存 —— 更改 —— 无分页文件 —— 设置并确定
 ```
 </details>
 	
-### 关闭休眠模式:
+<details>
+<summary>关闭休眠模式</summary>
+
 ```shell
 powercfg -h off
 ```
 
-### 关闭系统还原:
+</details>
+
+<details>
+<summary>关闭系统还原</summary>
+
 ```shell
 设置 —— 系统 —— 存储 —— 系统和保留空间 —— 管理系统还原
 ```
 
-### CPU核数设置:
+</details>
+
+<details>
+<summary>CPU核数设置</summary>
+
 ```shell
 msconfig
 ```
 
-### 卓越性能电源计划：
+</details>
+
+<details>
+<summary>卓越性能电源计划</summary>
+
 ```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 
-### 一键解除所有UWP应用的网络隔离（CMD指令/PowerShell指令）：
+</details>
+
+<details>
+<summary>一键解除所有UWP应用的网络隔离（CMD指令/PowerShell指令）</summary>
+
 [Windows Loopback Exemption Manager](https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager)(微软官方出品)、[Windows 8 AppContainer Loopback Utility](https://www.telerik.com/fiddler/add-ons)(第三方软件)
 
 ```cmd
@@ -39,7 +58,11 @@ FOR /F "tokens=11 delims=\" %p IN ('REG QUERY "HKCU\Software\Classes\Local Setti
 Get-ChildItem -Path Registry::"HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings\" -name | ForEach-Object {CheckNetIsolation.exe LoopbackExempt -a -p="$_"}
 ```
 
-### CMD/PowerShell代理设置：
+</details>
+
+<details>
+<summary>CMD/PowerShell代理设置</summary>
+
 ```cmd
 set http_proxy=http://127.0.0.1:2081
 set https_proxy=http://127.0.0.1:2081
@@ -50,7 +73,10 @@ $env:http_proxy="http://127.0.0.1:2081"
 $env:https_proxy="http://127.0.0.1:2081"
 ```
 
-### git代理设置：
+</details>
+
+<details>
+<summary>git代理设置</summary>
 
 ```shell
 # ssh代理配置文件路径：C:/Users/username/.ssh/config
@@ -65,13 +91,19 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:2080
 	proxy = socks5://127.0.0.1:2080
 ```
 
-### git log美化：
+</details>
+
+<details>
+<summary>git log美化</summary>
 
 ```shell
 git config --global alias.lg "log --color --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
 
-### git GPG相关设置：
+</details>
+
+<details>
+<summary>git GPG相关设置</summary>
 
 ```shell
 git config --global user.signingkey <密钥ID>
@@ -79,7 +111,11 @@ git config --global commit.gpgsign true
 git config --global tag.forcesignannotated true
 ```
 
-### pip代理功能稀烂，建议换阿里源：
+</details>
+
+<details>
+<summary>pip代理功能稀烂，建议换阿里源</summary>
+
 ```shell
 pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
 pip config set install.trusted-host mirrors.aliyun.com
@@ -92,7 +128,11 @@ index-url = http://mirrors.aliyun.com/pypi/simple/
 trusted-host = mirrors.aliyun.com
 ```
 
-### npm、yarn的代理/换源设置
+</details>
+
+<details>
+<summary>npm、yarn的代理/换源设置</summary>
+
 ```shell
 npm config set proxy http://127.0.0.1:2081
 npm config set https-proxy http://127.0.0.1:2081
@@ -102,13 +142,22 @@ yarn config set proxy http://127.0.0.1:2081
 yarn config set https-proxy http://127.0.0.1:2081
 yarn config set registry https://registry.npm.taobao.org
 ```
-### golang代理设置
+
+</details>
+
+<details>
+<summary>golang代理设置</summary>
+
 ```shell
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
 ```
 
-### GPG常用指令：
+</details>
+
+<details>
+<summary>GPG常用指令</summary>
+
 ```shell
 gpg --expert --full-generate-key
 gpg --generate-revocation -ao revoke.pgp <密钥ID>
@@ -136,7 +185,11 @@ gpg --delete-keys <密钥ID> # 删除公钥
 gpg --import [密钥文件]
 ```
 
-### Chrome浏览器实验性功能：
+</details>
+
+<details>
+<summary>Chrome浏览器实验性功能</summary>
+
 ```shell
 Override software rendering list
 Smooth Scrolling
@@ -154,7 +207,11 @@ Enforce deprecation of legacy TLS versions
 Copy Link To Text
 ```
 
-### 去除Win10默认显示的一些目录
+</details>
+
+<details>
+<summary>去除Win10默认显示的一些目录</summary>
+
 ```shell
 Windows Registry Editor Version 5.00
 ;如需还原去除上语句前减号即可
@@ -175,7 +232,13 @@ Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
 ```
 
-### youtube-dl设置文件目录：C:/Users/username/youtube-dl.conf
+</details>
+
+<details>
+<summary>youtube-dl设置</summary>
+
+设置文件目录：C:/Users/username/youtube-dl.conf
+
 ```shell
 --ignore-errors
 --external-downloader aria2c
@@ -190,7 +253,11 @@ Windows Registry Editor Version 5.00
 --write-thumbnail
 ```
 
-### WIN10优化设置，关闭遥测、熔断、TSX
+</details>
+
+<details>
+<summary>WIN10优化设置，关闭遥测、熔断、TSX</summary>
+
 ```shell
 Windows Registry Editor Version 5.00
 
@@ -207,7 +274,11 @@ Windows Registry Editor Version 5.00
 "DisableTsx"=dword:00000000
 ```
 
-### cmd设置编码格式，936为GBK，65001为UTF-8
+</details>
+
+<details>
+<summary>cmd设置编码格式，936为GBK，65001为UTF-8</summary>
+
 ```shell
 Windows Registry Editor Version 5.00
 
@@ -215,7 +286,11 @@ Windows Registry Editor Version 5.00
 "autorun"="chcp 936/65001"
 ```
 
-### IntelliJ IDEA设置备忘录
+</details>
+
+<details>
+<summary>IntelliJ IDEA设置备忘录</summary>
+
 ```shell
 【IntelliJ IDEA启动参数】
 文件目录：~\JetBrains\IntelliJIDEA\bin\idea64.exe.vmoptions
@@ -285,6 +360,8 @@ options
 - yiiguxing.translation.xml
 ```
 
+</details>
+
 ## Useful Websites
 
 - [UUP dump](https://uupdump.ml/?lang=zh-cn)
@@ -293,6 +370,7 @@ options
 - [远景论坛](http://bbs.pcbeta.com/forum-win10-1.html)
 
 ## Software List(Indispensable)
+
 - [微软常用运行库](https://www.ghpym.com/yxkhj.html)、[Alter version](https://github.com/abbodi1406/vcredist/releases)
 - [HWID_KMS38](http://bbs.pcbeta.com/viewthread-1810482-1-1.html)、[HEU KMS Activator](https://www.423down.com/1202.html)、[CMWTAT_Digital_Edition](https://github.com/TGSAN/CMWTAT_Digital_Edition/releases)、[KMS Tools](https://www.solidfiles.com/folder/bd7165a0d4/)
 - [v2rayN](https://github.com/2dust/v2rayN/releases)、[Qv2ray](https://github.com/Qv2ray/Qv2ray/actions/workflows/build-qv2ray-cmake.yml)
@@ -375,18 +453,21 @@ options
 - [BestTrace](https://www.ipip.net/product/client.html)
 
 #### Drivers
+
 - [Driver Booster](https://www.423down.com/10421.html)
 - [驱动人生](https://www.423down.com/581.html)
 - [驱动精灵](https://www.423down.com/5768.html)
 - [360驱动大师](https://www.423down.com/9157.html)
 
 #### Recovery
+
 - [7-Data Recovery Suite](https://www.423down.com/2721.html)
 - [EasyRecovery](https://www.423down.com/7904.html)
 - [R-STUDIO Network](https://www.423down.com/8132.html)
 - [DiskGenius](https://www.423down.com/8073.html)
 
 ## Developer tools
+
 - [Temurin](https://adoptium.net/)(totally free)、[JDK](https://www.oracle.com/java/technologies/javase-downloads.html)(the King)、[Liberica OpenJDK](https://bell-sw.com/pages/downloads/)(full version contains javafx)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [gsudo](https://github.com/gerardog/gsudo)
@@ -411,10 +492,13 @@ options
 - [Gpg4win](https://www.gpg4win.org/)
 
 ## Chrome Extensions
+
 #### Skin
+
 - [When the Night Falls (yellow neon; with rain)](https://chrome.google.com/webstore/detail/when-the-night-falls-yell/dhdibmnepnffnnlgldgkdembnmnhmdbc)
 
 #### Pinned
+
 - [Tree Style History](https://chrome.google.com/webstore/detail/tree-style-history/khcenbpnhbeplojhaolbpldmoppicold)
 - [Tab Muter](https://chrome.google.com/webstore/detail/tab-muter/bnclejfcblondkjliiblkojdeloomadd)
 - [哔哩哔哩助手](https://chrome.google.com/webstore/detail/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8A%A9%E6%89%8B%EF%BC%9Abilibilicom-%E7%BB%BC%E5%90%88%E8%BE%85%E5%8A%A9%E6%89%A9%E5%B1%95/kpbnombpnpcffllnianjibmpadjolanh)
@@ -429,6 +513,7 @@ options
 - [Violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
 
 #### Unpinned
+
 - [Adobe Acrobat](https://chrome.google.com/webstore/detail/adobe-acrobat/efaidnbmnnnibpcajpcglclefindmkaj)
 - [Augmented Steam](https://chrome.google.com/webstore/detail/augmented-steam/dnhpnfgdlenaccegplpojghhmaamnnfp)
 - [EhSyringe](https://github.com/EhTagTranslation/EhSyringe)
@@ -444,6 +529,7 @@ options
 - [购物党自动比价工具](https://chrome.google.com/webstore/detail/%E8%B4%AD%E7%89%A9%E5%85%9A%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/jgphnjokjhjlcnnajmfjlacjnjkhleah)
 
 #### Not Using
+
 - ~~[Bookmark Sidebar](https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh)~~
 - ~~[FeHelper](https://chrome.google.com/webstore/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad)~~
 - ~~[Octoman微博备份](https://chrome.google.com/webstore/detail/octoman%E5%BE%AE%E5%8D%9A%E5%A4%87%E4%BB%BD/pojodomdlpobompicdllljgiomnfpmho)~~
@@ -452,7 +538,9 @@ options
 - ~~[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
 - ~~[Wrona History Menu](https://chrome.google.com/webstore/detail/wrona-history-menu/fhibbdoaickjpmmhemkompghjjmpjdpj)~~
 
-## 系统美化(Unstable)
+<details>
+<summary>系统美化(Unstable)</summary>
+
 - [更纱黑体(Iosevka+思源黑体)](https://github.com/be5invis/Sarasa-Gothic/releases)
 - [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono/releases)
 - [阿里巴巴普惠体](https://done.alibabadesign.com/puhuiti2.0)
@@ -462,7 +550,11 @@ options
 - [UltraUXThemePatcher](https://www.syssel.net/hoefs/software_uxtheme.php?lang=en)
 - [OldNewExplorerCfg](https://tihiy.net/files/OldNewExplorer.rar)
 
-## 火绒规则
+</details>
+
+<details>
+<summary>火绒规则</summary>
+
 - [火绒论坛用户规则分享区](https://bbs.huorong.cn/forum-45-1.html)
 - [基础防御规则](https://bbs.huorong.cn/thread-12393-1-1.html)
 - [反流氓规则](https://bbs.huorong.cn/thread-12084-1-1.html)
@@ -470,3 +562,5 @@ options
 - [规则集中下载](https://flymc.cc/2020/03/17/HuorongRules/)
 
 注：更新Windows时需要关闭基础防御规则，安装浏览器时需要关闭隐私保护规则
+
+</details>
