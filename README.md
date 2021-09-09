@@ -184,8 +184,12 @@ gpg --import [密钥文件/撤销凭证]
 
 gpg --sign input.txt  # 给文档签名
 gpg --clear-sign input.txt # 生成ASCII格式签名
-gpg --armor --detach-sign input.txt # 签名和原文本分开
-gpg --verify input.txt.asc input.txt # 验证签名文件
+gpg -ao output.asc --detach-sign input.txt # 签名和原文本分开
+gpg --verify output.asc input.txt # 验证签名文件
+	
+gpg -se input.txt -r <公钥ID> -ao encrypt.asc  # 签名并加密文档
+# s代表签名, e代表加密, r代表recipient, 指定接收者的公钥ID, a代表ASCII码格式, o代表输出地址, 
+gpg -d encrypt.txt -ao decrypt.txt # 解密	
 ```
 
 ```shell
