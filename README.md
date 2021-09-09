@@ -122,6 +122,12 @@ gpg> key 1
 gpg> trust
 gpg> expire
 gpg> save
+
+gpg -ao public-key.txt --export <密钥ID> # 导出公钥
+# 注意这里最后要带上“!”， 不然会导出全部子密钥
+gpg  -ao secret-key.txt --export-secret-key <密钥ID>! # 导出主私钥
+gpg  -ao sign-subkey.txt --export-secret-subkeys <密钥ID>! # 导出子私钥
+
 ```
 
 ### Chrome浏览器实验性功能：
