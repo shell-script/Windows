@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1631176515097,
+  "timeStamp": 1631534505325,
   "version": "1.37.2",
   "userSettings": {
     "cloudStorageEnabled": true,
@@ -10,18 +10,22 @@
     "webrtcIPAddressHidden": true
   },
   "selectedFilterLists": [
+    "user-filters",
     "ublock-filters",
     "ublock-badware",
     "ublock-privacy",
     "ublock-abuse",
     "ublock-unbreak",
     "adguard-generic",
+    "easylist",
     "adguard-spyware",
+    "easyprivacy",
     "urlhaus-1",
     "adguard-annoyance",
     "adguard-social",
     "fanboy-thirdparty_social",
     "plowe-0",
+    "CHN-0",
     "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt"
   ],
   "hiddenSettings": {},
