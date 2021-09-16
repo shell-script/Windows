@@ -490,7 +490,7 @@ options
 
 ## Developer tools
 
-- [Temurin](https://adoptium.net/)(totally free)、[JDK](https://www.oracle.com/java/technologies/javase-downloads.html)(the King)、[Liberica OpenJDK](https://bell-sw.com/pages/downloads/)(full version contains javafx)
+- [Temurin](https://adoptium.net/)(totally free)、[JDK](https://www.oracle.com/java/technologies/downloads/)(the King)、[Liberica OpenJDK](https://bell-sw.com/pages/downloads/)(full version contains javafx)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [gsudo](https://github.com/gerardog/gsudo)
 - [(pin4)Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
