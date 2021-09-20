@@ -61,6 +61,48 @@ Get-ChildItem -Path Registry::"HKCU\Software\Classes\Local Settings\Software\Mic
 </details>
 
 <details>
+<summary>WSL2代理设置</summary>
+
+```shell
+$ sudo vim ~./bashrc
+
+# export windows_host=`cat /etc/resolv.conf|grep nameserver|awk '{print $2}'`
+# export ALL_PROXY="socks5://$windows_host:2080"
+
+# alias setproxy="export ALL_PROXY=socks5://$windows_host:2080" 
+# alias unsetproxy="unset ALL_PROXY"
+
+git clone https://github.com/rofl0r/proxychains-ng
+cd proxychains-ng
+sudo apt install build-essential
+./configure --prefix=/usr --sysconfdir=/etc
+make && make install
+make install-config
+```
+
+```shell
+$ sudo vim /etc/proxychains.conf
+
+quiet_mode
+dynamic_chain
+chain_len = 1
+proxy_dns
+remote_dns_subnet 224
+tcp_read_time_out 15000
+tcp_connect_time_out 8000
+localnet 127.0.0.0/255.0.0.0
+localnet 10.0.0.0/255.0.0.0
+localnet 172.16.0.0/255.240.0.0
+localnet 192.168.0.0/255.255.0.0
+
+[ProxyList]
+socks5  $windows_host 2080
+# http    $windows_host 2081
+```
+
+</details>
+
+<details>
 <summary>CMD/PowerShell代理设置</summary>
 
 ```cmd
@@ -194,6 +236,7 @@ gpg -ao input.txt -d output.asc # 解密
 
 ```shell
 C:/Users/username/.gnupg/gpg.conf
+
 keyid-format 0xlong
 with-fingerprint
 personal-cipher-preferences AES256
@@ -490,7 +533,7 @@ options
 
 ## Developer tools
 
-- [Temurin](https://adoptium.net/)(totally free)、[JDK](https://www.oracle.com/java/technologies/downloads/)(the King)、[Liberica OpenJDK](https://bell-sw.com/pages/downloads/)(full version contains javafx)
+- [Temurin](https://adoptium.net/)、[Oracle JDK](https://www.oracle.com/java/technologies/downloads/)、[Zulu](https://www.azul.com/downloads/)、[Liberica JDK](https://bell-sw.com/pages/downloads/)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [gsudo](https://github.com/gerardog/gsudo)
 - [(pin4)Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
