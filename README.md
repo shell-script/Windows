@@ -267,6 +267,7 @@ Reading List
 Parallel downloading
 Tab Hover Card Images
 Desktop Sharing Hub in Omnibox
+Windows style overlay scrollbars.(Edge)
 Copy Link To Text
 Enables Display Compositor to use a new gpu thread.
 ```
