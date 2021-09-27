@@ -258,18 +258,17 @@ s2k-count 65011712
 ```shell
 Override software rendering list
 Smooth Scrolling
+Overlay Scrollbars
 GPU rasterization
 Zero-copy rasterizer
 Enable system notifications.
 Password import
 Reading List
-Reading list 'New' badge promo
 Parallel downloading
 Tab Hover Card Images
 Desktop Sharing Hub in Omnibox
-Skia API for compositing
-Enforce deprecation of legacy TLS versions
 Copy Link To Text
+Enables Display Compositor to use a new gpu thread.
 ```
 
 </details>
