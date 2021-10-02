@@ -275,31 +275,6 @@ Copy Link To Text
 </details>
 
 <details>
-<summary>去除Win10默认显示的一些目录</summary>
-
-```shell
-Windows Registry Editor Version 5.00
-;如需还原去除上语句前减号即可
-
-;取消我的电脑"视频"文件夹
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
-;取消我的电脑"文档"文件夹
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
-;取消我的电脑"桌面"文件夹
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
-;取消我的电脑"音乐"文件夹
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
-;取消我的电脑"下载"文件夹
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
-;取消我的电脑"图片"文件夹
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
-;取消我的电脑"3D对象"文件夹
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
-```
-
-</details>
-
-<details>
 <summary>youtube-dl设置</summary>
 
 设置文件目录：C:/Users/username/youtube-dl.conf
@@ -604,28 +579,11 @@ options
 - ~~[Wrona History Menu](https://chrome.google.com/webstore/detail/wrona-history-menu/fhibbdoaickjpmmhemkompghjjmpjdpj)~~
 
 <details>
-<summary>系统美化(Unstable)</summary>
+<summary>字体及美化</summary>
 
 - [更纱黑体(Iosevka+思源黑体)](https://github.com/be5invis/Sarasa-Gothic/releases)
 - [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono/releases)
 - [阿里巴巴普惠体](https://done.alibabadesign.com/puhuiti2.0)
 - [致美化](https://zhutix.com/)
-- [noMeiryoUI](http://tatsu.life.coocan.jp/MySoft/index.html)
-- [MacType](https://www.mactype.net/)
-- [UltraUXThemePatcher](https://www.syssel.net/hoefs/software_uxtheme.php?lang=en)
-- [OldNewExplorerCfg](https://tihiy.net/files/OldNewExplorer.rar)
-
-</details>
-
-<details>
-<summary>火绒规则</summary>
-
-- [火绒论坛用户规则分享区](https://bbs.huorong.cn/forum-45-1.html)
-- [基础防御规则](https://bbs.huorong.cn/thread-12393-1-1.html)
-- [反流氓规则](https://bbs.huorong.cn/thread-12084-1-1.html)
-- [隐私保护规则](https://bbs.huorong.cn/thread-14023-1-1.html)
-- [规则集中下载](https://flymc.cc/2020/03/17/HuorongRules/)
-
-注：更新Windows时需要关闭基础防御规则，安装浏览器时需要关闭隐私保护规则
 
 </details>
