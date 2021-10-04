@@ -211,6 +211,7 @@ gpg> list # 列出所有子密钥
 gpg> key {n} # 选择序号为n的子密钥
 gpg> trust # 设置信任度
 gpg> expire # 设置过期时间
+gpg> passwd # 更改密码
 gpg> revkey # 撤销子密钥
 gpg> save # 保存
 
