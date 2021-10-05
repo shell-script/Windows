@@ -1,52 +1,49 @@
 # Windows软件清单
 避免每次装机重头寻找历史安装过的软件，索性列一个清单，炼成半小时装机软件复原大法
 
-<details>
-<summary>关闭虚拟内存</summary>
+<details><summary>关闭VBS</summary>
+
+```shell
+设置 —— 更新和安全 —— Windows安全中心 —— 设备安全性 —— 内核隔离详细信息， —— 内存完整性
+```
+</details>
+
+<details><summary>关闭虚拟内存</summary>
 
 ```shell
 设置 —— 系统 —— 关于 —— 高级系统设置 —— 性能设置 —— 高级 —— 虚拟内存 —— 更改 —— 无分页文件 —— 设置并确定
 ```
 </details>
 	
-<details>
-<summary>关闭休眠模式</summary>
+<details><summary>关闭休眠模式</summary>
 
 ```shell
 powercfg -h off
 ```
-
 </details>
 
-<details>
-<summary>关闭系统还原</summary>
+<details><summary>关闭系统还原</summary>
 
 ```shell
 设置 —— 系统 —— 存储 —— 系统和保留空间 —— 管理系统还原
 ```
-
 </details>
 
-<details>
-<summary>CPU核数设置</summary>
+<details><summary>CPU核数设置</summary>
 
 ```shell
 msconfig
 ```
-
 </details>
 
-<details>
-<summary>卓越性能电源计划</summary>
+<details><summary>卓越性能电源计划</summary>
 
 ```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
-
 </details>
 
-<details>
-<summary>一键解除所有UWP应用的网络隔离（CMD指令/PowerShell指令）</summary>
+<details><summary>一键解除所有UWP应用的网络隔离（CMD指令/PowerShell指令）</summary>
 
 [Windows Loopback Exemption Manager](https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager)(微软官方出品)、[Windows 8 AppContainer Loopback Utility](https://www.telerik.com/fiddler/add-ons)(第三方软件)
 
@@ -57,11 +54,9 @@ FOR /F "tokens=11 delims=\" %p IN ('REG QUERY "HKCU\Software\Classes\Local Setti
 ```powershell
 Get-ChildItem -Path Registry::"HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings\" -name | ForEach-Object {CheckNetIsolation.exe LoopbackExempt -a -p="$_"}
 ```
-
 </details>
 
-<details>
-<summary>WSL2代理设置</summary>
+<details><summary>WSL2代理设置</summary>
 
 ```shell
 $ sudo vim ~./bashrc
@@ -99,11 +94,9 @@ localnet 192.168.0.0/255.255.0.0
 socks5  $windows_host 2080
 # http    $windows_host 2081
 ```
-
 </details>
 
-<details>
-<summary>CMD/PowerShell代理设置</summary>
+<details><summary>CMD/PowerShell代理设置</summary>
 
 ```cmd
 set http_proxy=http://127.0.0.1:2081
@@ -114,11 +107,9 @@ set https_proxy=http://127.0.0.1:2081
 $env:http_proxy="http://127.0.0.1:2081"
 $env:https_proxy="http://127.0.0.1:2081"
 ```
-
 </details>
 
-<details>
-<summary>git代理设置</summary>
+<details><summary>git代理设置</summary>
 
 ```shell
 # ssh代理配置文件路径：C:/Users/username/.ssh/config
@@ -132,31 +123,25 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:2080
 [http "https://github.com"]
 	proxy = socks5://127.0.0.1:2080
 ```
-
 </details>
 
-<details>
-<summary>git log美化</summary>
+<details><summary>git log美化</summary>
 
 ```shell
 git config --global alias.lg "log --color --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
-
 </details>
 
-<details>
-<summary>git GPG相关设置</summary>
+<details><summary>git GPG相关设置</summary>
 
 ```shell
 git config --global user.signingkey <密钥ID>
 git config --global commit.gpgsign true
 git config --global tag.forcesignannotated true
 ```
-
 </details>
 
-<details>
-<summary>pip代理功能稀烂，建议换阿里源</summary>
+<details><summary>pip代理功能稀烂，建议换阿里源</summary>
 
 ```shell
 pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
@@ -169,11 +154,9 @@ index-url = http://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host = mirrors.aliyun.com
 ```
-
 </details>
 
-<details>
-<summary>npm、yarn的代理/换源设置</summary>
+<details><summary>npm、yarn的代理/换源设置</summary>
 
 ```shell
 npm config set proxy http://127.0.0.1:2081
@@ -184,21 +167,17 @@ yarn config set proxy http://127.0.0.1:2081
 yarn config set https-proxy http://127.0.0.1:2081
 yarn config set registry https://registry.npm.taobao.org
 ```
-
 </details>
 
-<details>
-<summary>golang代理设置</summary>
+<details><summary>golang代理设置</summary>
 
 ```shell
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
 ```
-
 </details>
 
-<details>
-<summary>GPG常用指令及配置文件</summary>
+<details><summary>GPG常用指令及配置文件</summary>
 
 ```shell
 gpg --expert --full-generate-key # 生成密钥
@@ -250,11 +229,9 @@ s2k-digest-algo SHA512
 s2k-mode 3
 s2k-count 65011712
 ```
-
 </details>
 
-<details>
-<summary>Chrome浏览器实验性功能</summary>
+<details><summary>Chrome浏览器实验性功能</summary>
 
 ```shell
 Override software rendering list
@@ -272,11 +249,9 @@ Windows style overlay scrollbars.(Edge)
 Copy Link To Text
 Enables Display Compositor to use a new gpu thread.
 ```
-
 </details>
 
-<details>
-<summary>youtube-dl设置</summary>
+<details><summary>youtube-dl设置</summary>
 
 设置文件目录：C:/Users/username/youtube-dl.conf
 
@@ -293,11 +268,9 @@ Enables Display Compositor to use a new gpu thread.
 --write-description
 --write-thumbnail
 ```
-
 </details>
 
-<details>
-<summary>WIN10优化设置，关闭遥测、熔断、TSX</summary>
+<details><summary>WIN10优化设置，关闭遥测、熔断、TSX</summary>
 
 ```shell
 Windows Registry Editor Version 5.00
@@ -314,11 +287,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
 "DisableTsx"=dword:00000000
 ```
-
 </details>
 
-<details>
-<summary>cmd设置编码格式，936为GBK，65001为UTF-8</summary>
+<details><summary>cmd设置编码格式，936为GBK，65001为UTF-8</summary>
 
 ```shell
 Windows Registry Editor Version 5.00
@@ -326,11 +297,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
 "autorun"="chcp 936/65001"
 ```
-
 </details>
 
-<details>
-<summary>IntelliJ IDEA设置备忘录</summary>
+<details><summary>IntelliJ IDEA设置备忘录</summary>
 
 ```shell
 【IntelliJ IDEA启动参数】
@@ -400,7 +369,6 @@ options
 - ui.lnf.xml
 - yiiguxing.translation.xml
 ```
-
 </details>
 
 ## Useful Websites
@@ -579,12 +547,10 @@ options
 - ~~[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
 - ~~[Wrona History Menu](https://chrome.google.com/webstore/detail/wrona-history-menu/fhibbdoaickjpmmhemkompghjjmpjdpj)~~
 
-<details>
-<summary>字体及美化</summary>
+<details><summary>字体及美化</summary>
 
 - [更纱黑体(Iosevka+思源黑体)](https://github.com/be5invis/Sarasa-Gothic/releases)
 - [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono/releases)
 - [阿里巴巴普惠体](https://done.alibabadesign.com/puhuiti2.0)
 - [致美化](https://zhutix.com/)
-
 </details>
