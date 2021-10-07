@@ -6,6 +6,11 @@
 ```shell
 设置 —— 更新和安全 —— Windows安全中心 —— 设备安全性 —— 内核隔离详细信息 —— 内存完整性
 ```
+
+```powershell
+bcdedit /set hypervisorlaunchtype off
+```
+
 </details>
 
 <details><summary>关闭虚拟内存</summary>
