@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1633174782308,
-  "version": "1.38.0",
+  "timeStamp": 1633619629601,
+  "version": "1.38.2",
   "userSettings": {
     "cloudStorageEnabled": true,
     "importedLists": [
