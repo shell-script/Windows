@@ -27,13 +27,6 @@ powercfg -h off
 ```
 </details>
 
-<details><summary>关闭系统还原</summary>
-
-```shell
-设置 —— 系统 —— 存储 —— 系统和保留空间 —— 管理系统还原
-```
-</details>
-
 <details><summary>CPU核数设置</summary>
 
 ```shell
@@ -207,7 +200,7 @@ gpg -ao sign-subkey.asc --export-secret-subkeys <密钥ID>! # 导出子私钥
 gpg --delete-secret-keys <密钥ID> # 删除私钥
 gpg --delete-keys <密钥ID> # 删除公钥
 
-gpg --import [密钥文件/撤销凭证]
+gpg --import [密钥文件/撤销凭证] # 导入密钥
 
 gpg --sign input.txt  # 给文档签名
 gpg --clear-sign input.txt # 生成ASCII格式签名
@@ -236,23 +229,17 @@ s2k-count 65011712
 ```
 </details>
 
-<details><summary>Chrome浏览器实验性功能</summary>
+<details><summary>Chrome & Edge Flags</summary>
 
 ```shell
-Override software rendering list
 Smooth Scrolling
-Overlay Scrollbars
-GPU rasterization
-Zero-copy rasterizer
 Enable system notifications.
-Password import
-Reading List
+【Chrome Only】Password import
 Parallel downloading
 Tab Hover Card Images
-Desktop Sharing Hub in Omnibox
-Windows style overlay scrollbars.(Edge)
-Copy Link To Text
-Enables Display Compositor to use a new gpu thread.
+【Chrome Only】Desktop Sharing Hub in Omnibox
+【Edge Only】Microsoft Edge Share Menu
+【Edge Only】Windows style overlay scrollbars.
 ```
 </details>
 
@@ -272,35 +259,6 @@ Enables Display Compositor to use a new gpu thread.
 --add-metadata
 --write-description
 --write-thumbnail
-```
-</details>
-
-<details><summary>WIN10优化设置，关闭遥测、熔断、TSX</summary>
-
-```shell
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorPort]
-"TelemetryPerformanceEnabled"=dword:00000000
-"TelemetryErrorDataEnabled"=dword:00000000
-"TelemetryDeviceHealthEnabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
-"FeatureSettingsOverride"=dword:00000003
-"FeatureSettingsOverrideMask"=dword:00000003
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
-"DisableTsx"=dword:00000000
-```
-</details>
-
-<details><summary>cmd设置编码格式，936为GBK，65001为UTF-8</summary>
-
-```shell
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
-"autorun"="chcp 936/65001"
 ```
 </details>
 
@@ -342,7 +300,7 @@ Editor —— Code Style —— Java —— Code Generation —— × Line comme
 【项目文件编码】[项目设置]
 Editor —— File Encodings —— Global Encoding: UTF-8 ; Project Encoding: UTF-8 ; Default encoding for properties files: UTF-8 ; √ Transparent native-to-ascii conversion
 【插件列表】
-Plugins —— One Dark theme ; Rainbow Brackets ; Translation
+Plugins —— Lombok ; One Dark theme ; Rainbow Brackets ; Translation ; Maven Helper ; RestfulTool ; MybatisX ; 
 【自动编译项目】[项目设置]
 Build, Execution, Deployment —— Compiler —— √ Build project automatically
 【增加堆内存】[项目设置]
@@ -387,18 +345,18 @@ options
 
 - [微软常用运行库](https://www.ghpym.com/yxkhj.html)、[Alter version](https://github.com/abbodi1406/vcredist/releases)
 - [HWID_KMS38](http://bbs.pcbeta.com/viewthread-1810482-1-1.html)、[HEU KMS Activator](https://www.423down.com/1202.html)、[CMWTAT_Digital_Edition](https://github.com/TGSAN/CMWTAT_Digital_Edition/releases)、[KMS Tools](https://www.solidfiles.com/folder/bd7165a0d4/)
-- [v2rayN](https://github.com/2dust/v2rayN/releases)、[Qv2ray](https://github.com/Qv2ray/Qv2ray/actions/workflows/build-qv2ray-cmake.yml)
+- [Netch](https://github.com/NetchX/Netch/releases)
+- [v2rayN](https://github.com/2dust/v2rayN/releases)
 - [搜狗输入法](https://pinyin.sogou.com/)
-- [Bandizip](https://www.bandisoft.com/bandizip/dl/)、[patch](https://www.423down.com/9735.html)、[7-Zip](https://www.7-zip.org/)、[7-Zip-zstd](https://github.com/mcmilk/7-Zip-zstd/releases)
+- [Bandizip](https://www.bandisoft.com/bandizip/dl/)、[patch](https://www.423down.com/9735.html)、[7-Zip](https://www.7-zip.org/)、[NanaZip](https://github.com/M2Team/NanaZip/releases)
 - [Chrome](https://www.google.com/intl/zh-CN/chrome/browser/thankyou.html?platform=win64&standalone=1&statcb=1&installdataindex=defaultbrowser)、[FireFox](https://www.mozilla.org/zh-CN/firefox/all/#product-desktop-release)
 - [Typora](https://typora.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [火绒](https://www.huorong.cn/person5.html)
-- [GeForce Drivers](https://www.nvidia.cn/geforce/drivers/)
 - [Logitech Gaming Software](https://support.logi.com/hc/zh-cn/articles/360025298053)
-- [Realtek High Definition Audio (HDA) Version WHQL](https://www.necacom.net/index.php/realtek/hda/)
 - [Intel Graphics Driver](https://www.intel.cn/content/www/cn/zh/products/sku/88967/intel-core-i76700hq-processor-6m-cache-up-to-3-50-ghz/downloads.html)
-- [Intel® Graphics Command Center](https://www.microsoft.com/en-us/p/intel-graphics-command-center/9plfnlnt3g5g)
+- [GeForce Drivers](https://www.nvidia.cn/geforce/drivers/)
+- [Realtek High Definition Audio (HDA) Version WHQL](https://www.necacom.net/index.php/realtek/hda/)
 - [Intel Wi-Fi 6 AX200 (Gig+) Driver](https://www.intel.cn/content/www/cn/zh/products/sku/189347/intel-wifi-6-ax200-gig/downloads.html)
 - [nvidiaProfileInspector](https://github.com/Orbmu2k/nvidiaProfileInspector/releases/)
 - [DriverStoreExplorer](https://github.com/lostindark/DriverStoreExplorer/releases)
@@ -410,14 +368,15 @@ options
 - [Steam](https://store.steampowered.com/about/)
 - [Ubisoft Connect](https://ubisoftconnect.com/zh-CN/)
 - [Groupy](https://store.steampowered.com/app/912170)
-- [Fences](https://store.steampowered.com/app/607380)
 - [Start10](https://store.steampowered.com/app/620050/Start10)
-- [(pin1)QuickCut](https://github.com/HaujetZhao/QuickCut)、[格式工厂](https://www.423down.com/1072.html)、[XMedia Recode](https://www.xmedia-recode.de/en/download_64bit.php)、[ShanaEncoder](https://shana.pe.kr/shanaencoder_download)
-- [(pin2)Microsoft Sticky Notes](https://www.microsoft.com/en-us/p/microsoft-sticky-notes/9nblggh4qghw)
-- [(pin3)Shotcut](https://github.com/mltframework/shotcut/releases)
-- [(pin6)ScreenToGif](https://github.com/NickeManarin/ScreenToGif/releases)
-- [(pin7)网易云音乐](https://music.163.com/#/download)
-- [(pin10)Windows Calculator](https://www.microsoft.com/en-us/p/windows-calculator/9wzdncrfhvn5)
+- [QuickCut](https://github.com/HaujetZhao/QuickCut)、[格式工厂](https://www.423down.com/1072.html)、[XMedia Recode](https://www.xmedia-recode.de/en/download_64bit.php)、[ShanaEncoder](https://shana.pe.kr/shanaencoder_download)
+- [Microsoft Sticky Notes](https://www.microsoft.com/en-us/p/microsoft-sticky-notes/9nblggh4qghw)
+- [Shotcut](https://github.com/mltframework/shotcut/releases)
+- [ScreenToGif](https://github.com/NickeManarin/ScreenToGif/releases)
+- [网易云音乐](https://music.163.com/#/download)
+- [Windows Calculator](https://www.microsoft.com/en-us/p/windows-calculator/9wzdncrfhvn5)
+- [WinSW](https://github.com/winsw/winsw/releases)
+- [UnblockNeteaseMusic](https://github.com/UnblockNeteaseMusic/server/releases)
 - [aria2](https://github.com/aria2/aria2/releases)
 - [FFmpeg(GPL ver.)](https://github.com/BtbN/FFmpeg-Builds/releases)
 - [youtube-dl](https://github.com/ytdl-org/youtube-dl/releases)
@@ -425,18 +384,13 @@ options
 - [PotPlayer](https://potplayer.daum.net/)
 - [Honeyview](http://www.bandisoft.com/honeyview/)
 - [K-Lite Codec Pack Mega](http://www.codecguide.com/download_k-lite_codec_pack_mega.htm)
-- [旺信](https://alimarket.taobao.com/markets/qnww/portal-group/ww/download)
-- [SteamAchievementManager](https://github.com/gibbed/SteamAchievementManager/releases)、[SAM-Auto](https://github.com/unencouraged/SAM-Auto/releases)
+- [阿里旺旺](https://alimarket.taobao.com/markets/qnww/portal-group/ww/download)
 - [Adobe software series](https://weibo.com/1112829033)
 - [百度云](http://pan.baidu.com/download)
 - [CCleaner](https://www.423down.com/716.html)、[Winapp2](https://github.com/MoscaDotTo/Winapp2)
 - [XMind](https://www.ghpym.com/xmindzen.html)
 - [Telegram](https://telegram.org/)
-- [UnblockNeteaseMusic](https://github.com/nondanee/UnblockNeteaseMusic)
-- [WinSW](https://github.com/winsw/winsw/releases)
-- [BilibiliLiveRecordDownLoader](https://github.com/HMBSbige/BilibiliLiveRecordDownLoader/releases)
 - [天翼云盘](https://cloud.189.cn/download_client.jsp)
-- [Netch](https://github.com/NetchX/Netch/releases)
 - [雷神加速器](https://jiasu.nn.com/)
 - [qBittorrent-Enhanced-Edition](https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases)
 - [微信](https://www.423down.com/8718.html)
@@ -444,7 +398,9 @@ options
 
 ## Software List(Optional)
 
+- [BilibiliLiveRecordDownLoader](https://github.com/HMBSbige/BilibiliLiveRecordDownLoader/releases)
 - [EmEditor](https://www.423down.com/7569.html)
+- [Fences](https://store.steampowered.com/app/607380)
 - [AIDA64](https://www.423down.com/887.html)
 - [AS SSD Benchmark](https://www.423down.com/6751.html)
 - [Cheat Engine](https://cheatengine.org/)
@@ -459,6 +415,7 @@ options
 - [rufus](https://github.com/pbatard/rufus/releases)
 - [Realtek Audio Control(UWP)](https://www.microsoft.com/zh-cn/p/realtek-audio-control/9p2b8mcsvpln)(Only valid when the UAD version of the driver is installed)
 - [Resilio Sync](https://www.resilio.com/platforms/desktop/)
+- [SteamAchievementManager](https://github.com/gibbed/SteamAchievementManager/releases)、[SAM-Auto](https://github.com/unencouraged/SAM-Auto/releases)
 - [CrystalDiskInfo & CrystalDiskMark](https://crystalmark.info/en/download/)
 - [GPU-Z](https://www.423down.com/3675.html)
 - [NatTypeTester](https://github.com/HMBSbige/NatTypeTester/releases)
@@ -485,9 +442,9 @@ options
 - [Temurin](https://adoptium.net/)、[Oracle JDK](https://www.oracle.com/java/technologies/downloads/)、[Zulu](https://www.azul.com/downloads/)、[Liberica JDK](https://bell-sw.com/pages/downloads/)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [gsudo](https://github.com/gerardog/gsudo)
-- [(pin4)Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
-- [(pin5)WinSCP](https://winscp.net/eng/download.php)
-- [(pin8)IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows)、[JetBrains Mono](https://www.jetbrains.com/lp/mono/)、[patch](https://zhile.io/)
+- [Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
+- [WinSCP](https://winscp.net/eng/download.php)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows)、[JetBrains Mono](https://www.jetbrains.com/lp/mono/)、[patch](https://zhile.io/)
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 - [git](https://github.com/git-for-windows/git/releases)
 - [AnotherRedisDesktopManager](https://github.com/qishibo/anotherredisdesktopmanager/releases)
@@ -495,7 +452,7 @@ options
 - [Autoruns](https://docs.microsoft.com/zh-cn/sysinternals/downloads/autoruns)
 - [WinDbg Preview](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools)
 - [jadx](https://github.com/skylot/jadx/releases)、[bytecode-viewer](https://github.com/Konloch/bytecode-viewer/releases)、[cfr](https://github.com/leibnitz27/cfr/releases)、[pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor)、[python-uncompyle6](https://github.com/rocky/python-uncompyle6/releases)
-- [(pin9)Navicat Premium](https://www.ghpym.com/navicat.html)
+- [Navicat Premium](https://www.ghpym.com/navicat.html)
 - [Node.js](https://nodejs.org/zh-cn/download/)
 - [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-nightly)
 - [Python](https://www.python.org/downloads/)
@@ -505,6 +462,11 @@ options
 - [TDM-GCC](https://jmeubank.github.io/tdm-gcc/)
 - [Gpg4win](https://www.gpg4win.org/)
 
+## 任务栏布局
+
+![](pin1.png)
+![](pin2.png)
+
 ## Chrome Extensions
 
 #### Skin
@@ -513,45 +475,46 @@ options
 
 #### Pinned
 
-- [Tree Style History](https://chrome.google.com/webstore/detail/tree-style-history/khcenbpnhbeplojhaolbpldmoppicold)
-- [Tab Muter](https://chrome.google.com/webstore/detail/tab-muter/bnclejfcblondkjliiblkojdeloomadd)
-- [哔哩哔哩助手](https://chrome.google.com/webstore/detail/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8A%A9%E6%89%8B%EF%BC%9Abilibilicom-%E7%BB%BC%E5%90%88%E8%BE%85%E5%8A%A9%E6%89%A9%E5%B1%95/kpbnombpnpcffllnianjibmpadjolanh)
+- [Tree Style History](https://github.com/tumuyan/Tree-Style-History)
+- [Tab Muter](https://github.com/sersorrel/mute-tab)
+- [哔哩哔哩助手](https://github.com/bilibili-helper/bilibili-helper-o)
 - [FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)
-- [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+- [uBlock Origin](https://github.com/gorhill/uBlock)
 - [RSS Reader Extension (by Inoreader)](https://chrome.google.com/webstore/detail/rss-reader-extension-by-i/kfimphpokifbjgmjflanmfeppcjimgah)
 - [Twitter Media Downloader](https://chrome.google.com/webstore/detail/twitter-media-downloader/cblpjenafgeohmnjknfhpdbdljfkndig)
-- [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)
-- [SingleFile](https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle)
+- [EditThisCookie](https://github.com/ETCExtensions/Edit-This-Cookie)
+- [SingleFile](https://github.com/gildas-lormeau/SingleFile)
 - [魂签](https://github.com/inu1255/soulsign-chrome)
-- [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-- [Violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
+- [Stylus](https://github.com/openstyles/stylus)
+- [Violentmonkey](https://github.com/violentmonkey/violentmonkey)
 
 #### Unpinned
 
 - [Adobe Acrobat](https://chrome.google.com/webstore/detail/adobe-acrobat/efaidnbmnnnibpcajpcglclefindmkaj)
-- [Augmented Steam](https://chrome.google.com/webstore/detail/augmented-steam/dnhpnfgdlenaccegplpojghhmaamnnfp)
+- [Augmented Steam](https://github.com/tfedor/AugmentedSteam)
 - [EhSyringe](https://github.com/EhTagTranslation/EhSyringe)
 - [Git Master](https://github.com/ineo6/git-master)
 - [IDM Integration Module](https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek)
-- [mirigana](https://chrome.google.com/webstore/detail/mirigana/hbekfodhcnfpkmoeaijgbamedofonjib)
-- [Refined GitHub](https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
+- [mirigana](https://github.com/mirigana/mirigana)
+- [Refined GitHub](https://github.com/refined-github/refined-github)
 - [ScrollAnywhere](https://chrome.google.com/webstore/detail/scrollanywhere/jehmdpemhgfgjblpkilmeoafmkhbckhi)
 - [Show YouTube comments while watching](https://github.com/tanguykurylo/show-youtube-comments)
-- [Steam Database](https://chrome.google.com/webstore/detail/steam-database/kdbmhfkmnlmbkgbabkdealhhbfhlmmon)
+- [Steam Database](https://github.com/SteamDatabase/BrowserExtension)
 - [TabCopy](https://chrome.google.com/webstore/detail/tabcopy/micdllihgoppmejpecmkilggmaagfdmb)
-- [uBlacklist](https://github.com/iorate/uBlacklist)、[中文搜索结果黑名单](https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist)
+- [WebRTC Leak Prevent](https://github.com/aghorler/WebRTC-Leak-Prevent)
 - [YouTube Live Chat Flow](https://github.com/fiahfy/youtube-live-chat-flow/releases)
 - [购物党自动比价工具](https://chrome.google.com/webstore/detail/%E8%B4%AD%E7%89%A9%E5%85%9A%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/jgphnjokjhjlcnnajmfjlacjnjkhleah)
 
 #### Not Using
 
-- ~~[Bookmark Sidebar](https://chrome.google.com/webstore/detail/bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh)~~
-- ~~[FeHelper](https://chrome.google.com/webstore/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad)~~
-- ~~[Octoman微博备份](https://chrome.google.com/webstore/detail/octoman%E5%BE%AE%E5%8D%9A%E5%A4%87%E4%BB%BD/pojodomdlpobompicdllljgiomnfpmho)~~
+- ~~[Bookmark Sidebar](https://github.com/Kiuryy/Bookmark_Sidebar)~~
+- ~~[FeHelper](https://github.com/zxlie/FeHelper)~~
+- ~~[Octoman微博备份](https://github.com/misswell/octoman-weibo-backup)~~
 - ~~[Similar Sites](https://chrome.google.com/webstore/detail/similar-sites-discover-re/necpbmbhhdiplmfhmjicabdeighkndkn)~~
 - ~~[Steam Inventory Helper](https://chrome.google.com/webstore/detail/steam-inventory-helper/cmeakgjggjdlcpncigglobpjbkabhmjl)~~
 - ~~[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
-- ~~[Wrona History Menu](https://chrome.google.com/webstore/detail/wrona-history-menu/fhibbdoaickjpmmhemkompghjjmpjdpj)~~
+- ~~[uBlacklist](https://github.com/iorate/uBlacklist)、[中文搜索结果黑名单](https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist)~~
+- ~~[Wrona History Menu](https://github.com/lajw/history-menu)~~
 
 <details><summary>字体及美化</summary>
 

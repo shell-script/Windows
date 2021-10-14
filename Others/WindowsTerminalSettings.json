@@ -11,12 +11,12 @@
             "keys": "ctrl+c"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "command": "paste",
             "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -32,99 +32,53 @@
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "experimental.rendering.forceFullRepaint": true,
-    "experimental.rendering.software": false,
     "focusFollowMouse": true,
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "acrylicOpacity": 0.90000000000000002,
+            "antialiasingMode": "cleartype",
+            "font": 
+            {
+                "face": "JetBrains Mono",
+                "size": 13
+            },
+            "useAcrylic": true
+        },
         "list": 
         [
             {
-                "acrylicOpacity": 0.90000000000000002,
-                "antialiasingMode": "cleartype",
-                "colorScheme": "Campbell",
                 "commandline": "gsudo.exe pwsh.exe",
-                "font": 
-                {
-                    "face": "JetBrains Mono",
-                    "size": 13
-                },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
-                "padding": "8",
-                "source": "Windows.Terminal.PowershellCore",
-                "useAcrylic": true
+                "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "acrylicOpacity": 0.90000000000000002,
-                "antialiasingMode": "cleartype",
-                "colorScheme": "Campbell",
                 "commandline": "gsudo.exe cmd.exe",
-                "experimental.retroTerminalEffect": false,
-                "font": 
-                {
-                    "face": "JetBrains Mono",
-                    "size": 13
-                },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Command Prompt",
-                "padding": "8",
-                "scrollbarState": "visible",
-                "useAcrylic": true
+                "name": "\u547d\u4ee4\u63d0\u793a\u7b26"
             },
             {
-                "acrylicOpacity": 0.90000000000000002,
-                "antialiasingMode": "cleartype",
-                "commandline": "gsudo.exe S:/develop/Git/bin/bash.exe -i -l",
-                "font": 
-                {
-                    "face": "JetBrains Mono",
-                    "size": 13
-                },
+                "commandline": "gsudo.exe S:/develop/Git/Git/bin/bash.exe -i -l",
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
-                "source": "Git",
-                "useAcrylic": true
+                "source": "Git"
             },
             {
-                "acrylicOpacity": 0.90000000000000002,
-                "antialiasingMode": "cleartype",
-                "colorScheme": "Campbell",
-                "commandline": "gsudo.exe powershell.exe",
-                "font": 
-                {
-                    "face": "JetBrains Mono",
-                    "size": 13
-                },
+                "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": true,
-                "name": "Windows PowerShell",
-                "padding": "8",
-                "useAcrylic": true
+                "name": "Windows PowerShell"
             },
             {
-                "acrylicOpacity": 0.90000000000000002,
-                "antialiasingMode": "cleartype",
-                "colorScheme": "Campbell",
-                "font": 
-                {
-                    "face": "JetBrains Mono",
-                    "size": 13
-                },
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": true,
                 "name": "Azure Cloud Shell",
-                "padding": "8",
-                "source": "Windows.Terminal.Azure",
-                "useAcrylic": true
-            },
-            {
-                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                "name": "Debian",
-                "source": "Windows.Terminal.Wsl"
+                "source": "Windows.Terminal.Azure"
             }
         ]
     },
@@ -339,5 +293,6 @@
         }
     ],
     "theme": "dark",
-    "trimBlockSelection": true
+    "trimBlockSelection": true,
+    "useAcrylicInTabRow": true
 }
