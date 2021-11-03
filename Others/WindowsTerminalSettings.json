@@ -62,7 +62,7 @@
                 "name": "\u547d\u4ee4\u63d0\u793a\u7b26"
             },
             {
-                "commandline": "gsudo.exe S:/develop/Git/Git/bin/bash.exe -i -l",
+                "commandline": "gsudo.exe S:/develop/Git/bin/bash.exe -i -l",
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",

@@ -1,4 +1,4 @@
-# Windows软件清单
+# Windows设置及软件清单
 避免每次装机重头寻找历史安装过的软件，索性列一个清单，炼成半小时装机软件复原大法
 
 <details><summary>关闭VBS</summary>
@@ -233,6 +233,7 @@ s2k-count 65011712
 
 ```shell
 Smooth Scrolling
+WebAssembly lazy compilation
 Enable system notifications.
 【Chrome Only】Password import
 Parallel downloading
@@ -437,7 +438,7 @@ options
 - [R-STUDIO Network](https://www.423down.com/8132.html)
 - [DiskGenius](https://www.423down.com/8073.html)
 
-## Developer tools
+## Developer Tools
 
 - [Temurin](https://adoptium.net/)、[Oracle JDK](https://www.oracle.com/java/technologies/downloads/)、[Zulu](https://www.azul.com/downloads/)、[Liberica JDK](https://bell-sw.com/pages/downloads/)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
