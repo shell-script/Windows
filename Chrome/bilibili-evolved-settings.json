@@ -744,8 +744,7 @@
             "music",
             "drawing",
             "shop",
-            "music",
-            "match"
+            "music"
           ],
           "order": {
             "blank1": 0,
@@ -965,7 +964,7 @@
             },
             "customNavbar": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/preview/registry/dist/components/style/custom-navbar.js",
-              "lastUpdateCheck": 1636233681793,
+              "lastUpdateCheck": 1636233875065,
               "installTime": 1634700332120,
               "alwaysUpdate": false
             }
