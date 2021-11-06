@@ -482,6 +482,7 @@ options
 - [FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)
 - [uBlock Origin](https://github.com/gorhill/uBlock)
 - [RSS Reader Extension (by Inoreader)](https://chrome.google.com/webstore/detail/rss-reader-extension-by-i/kfimphpokifbjgmjflanmfeppcjimgah)
+- [贴吧签到助手](https://chrome.google.com/webstore/detail/bpheclmhommpomjoeoifcggjmdelgaoj)
 - [Twitter Media Downloader](https://chrome.google.com/webstore/detail/twitter-media-downloader/cblpjenafgeohmnjknfhpdbdljfkndig)
 - [EditThisCookie](https://github.com/ETCExtensions/Edit-This-Cookie)
 - [SingleFile](https://github.com/gildas-lormeau/SingleFile)
