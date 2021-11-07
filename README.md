@@ -393,6 +393,7 @@ options
 - [Telegram](https://telegram.org/)
 - [天翼云盘](https://cloud.189.cn/download_client.jsp)
 - [雷神加速器](https://jiasu.nn.com/)
+- [雷电安卓模拟器](https://www.ldmnq.com/)
 - [qBittorrent-Enhanced-Edition](https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases)
 - [微信](https://www.423down.com/8718.html)
 - 来自设备制造商的 HEVC 视频扩展(ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq)
