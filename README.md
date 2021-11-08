@@ -159,8 +159,7 @@ trusted-host = mirrors.aliyun.com
 ```shell
 npm config set proxy http://127.0.0.1:2081
 npm config set https-proxy http://127.0.0.1:2081
-npm install -g cnpm --registry=https://registry.npmmirror.com
-# npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npm.taobao.org
 
 yarn config set proxy http://127.0.0.1:2081
 yarn config set https-proxy http://127.0.0.1:2081
