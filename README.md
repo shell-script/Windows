@@ -142,12 +142,12 @@ git config --global tag.forcesignannotated true
 <details><summary>pip代理功能稀烂，建议换阿里源</summary>
 
 ```shell
-pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 pip config set install.trusted-host mirrors.aliyun.com
 
 # pip全局配置文件路径：C:/Users/username/AppData/Roaming/pip/pip.ini
 [global]
-index-url = http://mirrors.aliyun.com/pypi/simple/
+index-url = https://mirrors.aliyun.com/pypi/simple/
 # proxy=http://127.0.0.1:2081
 [install]
 trusted-host = mirrors.aliyun.com
@@ -157,9 +157,11 @@ trusted-host = mirrors.aliyun.com
 <details><summary>npm、yarn的代理/换源设置</summary>
 
 ```shell
+npm install -g cnpm --registry=https://registry.npmmirror.com
+
 npm config set proxy http://127.0.0.1:2081
 npm config set https-proxy http://127.0.0.1:2081
-npm config set registry https://registry.npm.taobao.org
+# npm config set registry https://registry.npm.taobao.org
 
 yarn config set proxy http://127.0.0.1:2081
 yarn config set https-proxy http://127.0.0.1:2081
