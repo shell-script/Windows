@@ -354,7 +354,7 @@ options
 - [Typora](https://typora.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [火绒](https://www.huorong.cn/person5.html)
-- [Logitech Gaming Software](https://support.logi.com/hc/zh-cn/articles/360025298053)
+- [Logitech G HUB](https://support.logi.com/hc/zh-cn/articles/360025298133)
 - [Intel Graphics Driver](https://www.intel.cn/content/www/cn/zh/products/sku/88967/intel-core-i76700hq-processor-6m-cache-up-to-3-50-ghz/downloads.html)
 - [GeForce Drivers](https://www.nvidia.cn/geforce/drivers/)
 - [Realtek High Definition Audio (HDA) Version WHQL](https://www.necacom.net/index.php/realtek/hda/)
