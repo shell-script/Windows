@@ -35,7 +35,6 @@
     "# opera-scheme",
     "# vivaldi-scheme",
     "# wyciwyg-scheme",
-    "cloud.digitalocean.com",
     "www.bilibili.com",
     "www.ruanyifeng.com",
     "www.zhihu.com"
