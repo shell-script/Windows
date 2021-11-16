@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1635800471371,
+  "timeStamp": 1637065539337,
   "version": "1.38.6",
   "userSettings": {
     "cloudStorageEnabled": true,
@@ -35,6 +35,7 @@
     "# opera-scheme",
     "# vivaldi-scheme",
     "# wyciwyg-scheme",
+    "cloud.digitalocean.com",
     "www.bilibili.com",
     "www.ruanyifeng.com",
     "www.zhihu.com"
