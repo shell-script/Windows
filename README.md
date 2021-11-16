@@ -142,12 +142,12 @@ git config --global tag.forcesignannotated true
 <details><summary>pip代理功能稀烂，建议换阿里源</summary>
 
 ```shell
-pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 pip config set install.trusted-host mirrors.aliyun.com
 
 # pip全局配置文件路径：C:/Users/username/AppData/Roaming/pip/pip.ini
 [global]
-index-url = http://mirrors.aliyun.com/pypi/simple/
+index-url = https://mirrors.aliyun.com/pypi/simple/
 # proxy=http://127.0.0.1:2081
 [install]
 trusted-host = mirrors.aliyun.com
@@ -354,7 +354,7 @@ options
 - [Typora](https://typora.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [火绒](https://www.huorong.cn/person5.html)
-- [Logitech Gaming Software](https://support.logi.com/hc/zh-cn/articles/360025298053)
+- [Logitech G HUB](https://support.logi.com/hc/zh-cn/articles/360025298133)
 - [Intel Graphics Driver](https://www.intel.cn/content/www/cn/zh/products/sku/88967/intel-core-i76700hq-processor-6m-cache-up-to-3-50-ghz/downloads.html)
 - [GeForce Drivers](https://www.nvidia.cn/geforce/drivers/)
 - [Realtek High Definition Audio (HDA) Version WHQL](https://www.necacom.net/index.php/realtek/hda/)
@@ -441,7 +441,7 @@ options
 
 ## Developer Tools
 
-- [Temurin](https://adoptium.net/)、[Oracle JDK](https://www.oracle.com/java/technologies/downloads/)、[Zulu](https://www.azul.com/downloads/)、[Liberica JDK](https://bell-sw.com/pages/downloads/)
+- [Temurin](https://adoptium.net/)、[Oracle JDK](https://www.oracle.com/java/technologies/downloads/)、[Zulu](https://www.azul.com/downloads/)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [gsudo](https://github.com/gerardog/gsudo)
 - [Termius](https://www.termius.com/windows)、[patch](https://www.52pojie.cn/thread-1303401-1-1.html)
