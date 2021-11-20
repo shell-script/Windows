@@ -347,7 +347,7 @@ options
 ## Software List(Indispensable)
 
 - [微软常用运行库](https://www.ghpym.com/yxkhj.html)、[Alter version](https://github.com/abbodi1406/vcredist/releases)
-- [HEU KMS Activator](https://www.423down.com/1202.html)、[winactivate](https://github.com/luzeadev/winactivate/releases)、[KMS_VL_ALL_AIO](https://github.com/abbodi1406/KMS_VL_ALL_AIO)
+- [HEU KMS Activator](https://www.423down.com/1202.html)、[winactivate](https://github.com/luzeadev/winactivate/releases)、[KMS_VL_ALL_AIO](https://github.com/abbodi1406/KMS_VL_ALL_AIO/releases)
 - [Netch](https://github.com/NetchX/Netch/releases)
 - [v2rayN](https://github.com/2dust/v2rayN/releases)
 - [搜狗输入法](https://pinyin.sogou.com/)
