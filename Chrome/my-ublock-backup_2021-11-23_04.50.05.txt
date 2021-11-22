@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1637431668589,
+  "timeStamp": 1637614205011,
   "version": "1.38.6",
   "userSettings": {
     "cloudStorageEnabled": true,
@@ -8,6 +8,7 @@
       "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt"
     ],
     "popupPanelSections": 31,
+    "prefetchingDisabled": false,
     "webrtcIPAddressHidden": true
   },
   "selectedFilterLists": [
