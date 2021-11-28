@@ -371,7 +371,6 @@ options
 - [搜狗输入法](https://pinyin.sogou.com/)
 - [Bandizip](https://www.bandisoft.com/bandizip/dl/)、[patch](https://www.423down.com/9735.html)、[7-Zip](https://www.7-zip.org/)、[NanaZip](https://github.com/M2Team/NanaZip/releases)
 - [Chrome](https://www.google.com/intl/zh-CN/chrome/browser/thankyou.html?platform=win64&standalone=1&statcb=1&installdataindex=defaultbrowser)、[FireFox](https://www.mozilla.org/zh-CN/firefox/all/#product-desktop-release)
-- [Typora](https://typora.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [火绒](https://www.huorong.cn/person5.html)
 - [Logitech G HUB](https://support.logi.com/hc/zh-cn/articles/360025298133)
