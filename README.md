@@ -1,4 +1,5 @@
 # Windows设置及软件清单
+
 避免每次装机重头寻找历史安装过的软件，索性列一个清单，炼成半小时装机软件复原大法
 
 <details><summary>关闭VBS</summary>
@@ -18,13 +19,15 @@ bcdedit /set hypervisorlaunchtype off
 ```shell
 设置 —— 系统 —— 关于 —— 高级系统设置 —— 性能设置 —— 高级 —— 虚拟内存 —— 更改 —— 无分页文件 —— 设置并确定
 ```
+
 </details>
-	
+
 <details><summary>关闭休眠模式</summary>
 
 ```shell
 powercfg -h off
 ```
+
 </details>
 
 <details><summary>CPU核数设置</summary>
@@ -32,6 +35,7 @@ powercfg -h off
 ```shell
 msconfig
 ```
+
 </details>
 
 <details><summary>卓越性能电源计划</summary>
@@ -39,6 +43,7 @@ msconfig
 ```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
+
 </details>
 
 <details><summary>一键解除所有UWP应用的网络隔离（CMD指令/PowerShell指令）</summary>
@@ -52,6 +57,7 @@ FOR /F "tokens=11 delims=\" %p IN ('REG QUERY "HKCU\Software\Classes\Local Setti
 ```powershell
 Get-ChildItem -Path Registry::"HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings\" -name | ForEach-Object {CheckNetIsolation.exe LoopbackExempt -a -p="$_"}
 ```
+
 </details>
 
 <details><summary>WSL2代理设置</summary>
@@ -92,6 +98,7 @@ localnet 192.168.0.0/255.255.0.0
 socks5  $windows_host 2080
 # http    $windows_host 2081
 ```
+
 </details>
 
 <details><summary>CMD/PowerShell代理设置</summary>
@@ -105,6 +112,7 @@ set https_proxy=http://127.0.0.1:2081
 $env:http_proxy="http://127.0.0.1:2081"
 $env:https_proxy="http://127.0.0.1:2081"
 ```
+
 </details>
 
 <details><summary>git代理设置</summary>
@@ -119,8 +127,9 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:2080
 
 # git配置文件路径：C:/Users/username/.gitconfig
 [http "https://github.com"]
-	proxy = socks5://127.0.0.1:2080
+    proxy = socks5://127.0.0.1:2080
 ```
+
 </details>
 
 <details><summary>git log美化</summary>
@@ -128,6 +137,7 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:2080
 ```shell
 git config --global alias.lg "log --color --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
+
 </details>
 
 <details><summary>git GPG相关设置</summary>
@@ -137,6 +147,7 @@ git config --global user.signingkey <密钥ID>
 git config --global commit.gpgsign true
 git config --global tag.forcesignannotated true
 ```
+
 </details>
 
 <details><summary>pip代理功能稀烂，建议换阿里源</summary>
@@ -152,6 +163,7 @@ index-url = https://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host = mirrors.aliyun.com
 ```
+
 </details>
 
 <details><summary>npm、yarn的代理/换源设置</summary>
@@ -165,6 +177,7 @@ yarn config set proxy http://127.0.0.1:2081
 yarn config set https-proxy http://127.0.0.1:2081
 yarn config set registry https://registry.npmmirror.com
 ```
+
 </details>
 
 <details><summary>golang代理设置</summary>
@@ -173,6 +186,7 @@ yarn config set registry https://registry.npmmirror.com
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
 ```
+
 </details>
 
 <details><summary>GPG常用指令及配置文件</summary>
@@ -206,10 +220,10 @@ gpg --sign input.txt  # 给文档签名
 gpg --clear-sign input.txt # 生成ASCII格式签名
 gpg -ao output.asc --detach-sign input.txt # 签名和原文本分开
 gpg --verify output.asc input.txt # 验证签名文件
-	
+
 gpg -ao output.asc -se input.txt -r <公钥ID> # 签名并加密文档
 # s代表签名, e代表加密, r代表recipient, 指定接收者的公钥ID, a代表ASCII码格式, o代表输出地址, 
-gpg -ao input.txt -d output.asc # 解密	
+gpg -ao input.txt -d output.asc # 解密    
 ```
 
 ```shell
@@ -227,6 +241,7 @@ s2k-digest-algo SHA512
 s2k-mode 3
 s2k-count 65011712
 ```
+
 </details>
 
 <details><summary>Chrome & Edge Flags</summary>
@@ -244,6 +259,7 @@ Tab Hover Card Images
 【Edge Only】Windows style overlay scrollbars.
 【Edge Only】Enable Windows 11 Visual Updates
 ```
+
 </details>
 
 <details><summary>youtube-dl设置</summary>
@@ -263,6 +279,7 @@ Tab Hover Card Images
 --write-description
 --write-thumbnail
 ```
+
 </details>
 
 <details><summary>IntelliJ IDEA设置备忘录</summary>
@@ -335,6 +352,7 @@ options
 - ui.lnf.xml
 - yiiguxing.translation.xml
 ```
+
 </details>
 
 ## Useful Websites
@@ -522,7 +540,11 @@ options
 <details><summary>字体及美化</summary>
 
 - [更纱黑体(Iosevka+思源黑体)](https://github.com/be5invis/Sarasa-Gothic/releases)
+
 - [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono/releases)
+
 - [阿里巴巴普惠体](https://done.alibabadesign.com/puhuiti2.0)
+
 - [致美化](https://zhutix.com/)
-</details>
+  
+  </details>
