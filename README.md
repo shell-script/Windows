@@ -419,6 +419,7 @@ options
 
 ## Software List(Optional)
 
+- [Ventoy](https://github.com/ventoy/Ventoy/releases)
 - [BilibiliLiveRecordDownLoader](https://github.com/HMBSbige/BilibiliLiveRecordDownLoader/releases)
 - [EmEditor](https://www.423down.com/7569.html)
 - [Fences](https://store.steampowered.com/app/607380)
