@@ -499,7 +499,6 @@ options
 - [Tab Muter](https://github.com/sersorrel/mute-tab)
 - [哔哩哔哩助手](https://github.com/bilibili-helper/bilibili-helper-o)
 - [FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)
-- [uBlock Origin](https://github.com/gorhill/uBlock)
 - [RSS Reader Extension (by Inoreader)](https://chrome.google.com/webstore/detail/rss-reader-extension-by-i/kfimphpokifbjgmjflanmfeppcjimgah)
 - [贴吧签到助手](https://chrome.google.com/webstore/detail/bpheclmhommpomjoeoifcggjmdelgaoj)
 - [Twitter Media Downloader](https://chrome.google.com/webstore/detail/twitter-media-downloader/cblpjenafgeohmnjknfhpdbdljfkndig)
@@ -535,6 +534,7 @@ options
 - ~~[Steam Inventory Helper](https://chrome.google.com/webstore/detail/steam-inventory-helper/cmeakgjggjdlcpncigglobpjbkabhmjl)~~
 - ~~[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
 - ~~[uBlacklist](https://github.com/iorate/uBlacklist)、[中文搜索结果黑名单](https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist)~~
+- ~~[uBlock Origin](https://github.com/gorhill/uBlock)~~
 - ~~[Wrona History Menu](https://github.com/lajw/history-menu)~~
 
 <details><summary>字体及美化</summary>
