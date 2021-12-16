@@ -461,7 +461,7 @@ options
 
 ## Developer Tools
 
-- [Temurin](https://adoptium.net/)、[Oracle JDK](https://www.oracle.com/java/technologies/downloads/)、[Zulu](https://www.azul.com/downloads/)
+- [Temurin](https://adoptium.net/)、[Oracle JDK](https://www.oracle.com/java/technologies/downloads/)、[Semeru(openj9)](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/)、[Zulu](https://www.azul.com/downloads/)
 - [Windows Terminal](https://github.com/microsoft/terminal/releases)
 - [gsudo](https://github.com/gerardog/gsudo)
 - [WindTerm](https://github.com/kingToolbox/WindTerm)、[Termius](https://www.termius.com/windows)、[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)、[WinSCP](https://winscp.net/eng/download.php)
