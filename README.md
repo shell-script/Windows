@@ -399,6 +399,7 @@ options
 - [UnblockNeteaseMusic](https://github.com/UnblockNeteaseMusic/server/releases)
 - [aria2](https://github.com/aria2/aria2/releases)
 - [FFmpeg(GPL ver.)](https://github.com/BtbN/FFmpeg-Builds/releases)
+- [N_m3u8DL-CLI](https://github.com/nilaoda/N_m3u8DL-CLI/releases)
 - [youtube-dl](https://github.com/ytdl-org/youtube-dl/releases)
 - [Snipaste](https://www.snipaste.com/)
 - [PotPlayer](https://potplayer.daum.net/)
