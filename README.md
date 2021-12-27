@@ -496,7 +496,6 @@ options
 
 #### Pinned
 
-- [Tree Style History](https://github.com/tumuyan/Tree-Style-History)
 - [Tab Muter](https://github.com/sersorrel/mute-tab)
 - [哔哩哔哩助手](https://github.com/bilibili-helper/bilibili-helper-o)
 - [FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)
@@ -536,7 +535,7 @@ options
 - ~~[Steam Inventory Helper](https://chrome.google.com/webstore/detail/steam-inventory-helper/cmeakgjggjdlcpncigglobpjbkabhmjl)~~
 - ~~[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
 - ~~[uBlacklist](https://github.com/iorate/uBlacklist)、[中文搜索结果黑名单](https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist)~~
-- ~~[uBlock Origin](https://github.com/gorhill/uBlock)~~
+- ~~[Tree Style History](https://github.com/tumuyan/Tree-Style-History)~~
 - ~~[Wrona History Menu](https://github.com/lajw/history-menu)~~
 
 <details><summary>字体及美化</summary>
