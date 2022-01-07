@@ -252,7 +252,6 @@ WebAssembly lazy compilation
 Enable system notifications.
 【Chrome Only】Password import
 Parallel downloading
-Tab Hover Card Images
 【Chrome Only】Desktop Sharing Hub in Omnibox
 【Chrome Only】Windows 11 Style Menus
 【Edge Only】Microsoft Edge Share Menu
