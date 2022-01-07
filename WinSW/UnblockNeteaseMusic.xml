@@ -3,7 +3,7 @@
   <name>解锁网易云音乐客户端变灰歌曲</name>
   <description>解锁网易云音乐客户端变灰歌曲</description>
   <executable>UnblockNeteaseMusic.exe</executable>
-  <arguments>-p 11111</arguments>
+  <arguments>-p 11111:11112</arguments>
   <logmode>rotate</logmode>
   <logpath>log</logpath>
   <priority>Normal</priority>
