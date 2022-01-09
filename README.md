@@ -421,6 +421,7 @@ options
 
 - [Ventoy](https://github.com/ventoy/Ventoy/releases)
 - [BilibiliLiveRecordDownLoader](https://github.com/HMBSbige/BilibiliLiveRecordDownLoader/releases)
+- [DDTV](https://github.com/CHKZL/DDTV/releases)
 - [EmEditor](https://www.423down.com/7569.html)
 - [Fences](https://store.steampowered.com/app/607380)
 - [AIDA64](https://www.423down.com/887.html)
