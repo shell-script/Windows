@@ -11,41 +11,31 @@
 ```powershell
 bcdedit /set hypervisorlaunchtype off
 ```
-
 </details>
-
 <details><summary>关闭虚拟内存</summary>
 
 ```shell
 设置 —— 系统 —— 关于 —— 高级系统设置 —— 性能设置 —— 高级 —— 虚拟内存 —— 更改 —— 无分页文件 —— 设置并确定
 ```
-
 </details>
-
 <details><summary>关闭休眠模式</summary>
 
 ```shell
 powercfg -h off
 ```
-
 </details>
-
 <details><summary>CPU核数设置</summary>
 
 ```shell
 msconfig
 ```
-
 </details>
-
 <details><summary>卓越性能电源计划</summary>
 
 ```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
-
 </details>
-
 <details><summary>一键解除所有UWP应用的网络隔离（CMD指令/PowerShell指令）</summary>
 
 [Windows Loopback Exemption Manager](https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager)(微软官方出品)、[Windows 8 AppContainer Loopback Utility](https://www.telerik.com/fiddler/add-ons)(第三方软件)
@@ -57,9 +47,7 @@ FOR /F "tokens=11 delims=\" %p IN ('REG QUERY "HKCU\Software\Classes\Local Setti
 ```powershell
 Get-ChildItem -Path Registry::"HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings\" -name | ForEach-Object {CheckNetIsolation.exe LoopbackExempt -a -p="$_"}
 ```
-
 </details>
-
 <details><summary>WSL2代理设置</summary>
 
 ```shell
@@ -98,9 +86,7 @@ localnet 192.168.0.0/255.255.0.0
 socks5  $windows_host 2080
 # http    $windows_host 2081
 ```
-
 </details>
-
 <details><summary>CMD/PowerShell代理设置</summary>
 
 ```cmd
@@ -112,9 +98,7 @@ set https_proxy=http://127.0.0.1:2081
 $env:http_proxy="http://127.0.0.1:2081"
 $env:https_proxy="http://127.0.0.1:2081"
 ```
-
 </details>
-
 <details><summary>git代理设置</summary>
 
 ```shell
@@ -129,17 +113,13 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:2080
 [http "https://github.com"]
     proxy = socks5://127.0.0.1:2080
 ```
-
 </details>
-
 <details><summary>git log美化</summary>
 
 ```shell
 git config --global alias.lg "log --color --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
-
 </details>
-
 <details><summary>git GPG相关设置</summary>
 
 ```shell
@@ -147,9 +127,7 @@ git config --global user.signingkey <密钥ID>
 git config --global commit.gpgsign true
 git config --global tag.forcesignannotated true
 ```
-
 </details>
-
 <details><summary>pip代理功能稀烂，建议换阿里源</summary>
 
 ```shell
@@ -163,9 +141,7 @@ index-url = https://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host = mirrors.aliyun.com
 ```
-
 </details>
-
 <details><summary>npm、yarn的代理/换源设置</summary>
 
 ```shell
@@ -177,18 +153,14 @@ yarn config set proxy http://127.0.0.1:2081
 yarn config set https-proxy http://127.0.0.1:2081
 yarn config set registry https://registry.npmmirror.com
 ```
-
 </details>
-
 <details><summary>golang代理设置</summary>
 
 ```shell
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
 ```
-
 </details>
-
 <details><summary>GPG常用指令及配置文件</summary>
 
 ```shell
@@ -241,9 +213,7 @@ s2k-digest-algo SHA512
 s2k-mode 3
 s2k-count 65011712
 ```
-
 </details>
-
 <details><summary>Chrome & Edge Flags</summary>
 
 ```shell
@@ -258,9 +228,7 @@ Parallel downloading
 【Edge Only】Windows style overlay scrollbars.
 【Edge Only】Enable Windows 11 Visual Updates
 ```
-
 </details>
-
 <details><summary>youtube-dl设置</summary>
 
 设置文件目录：C:/Users/username/youtube-dl.conf
@@ -278,9 +246,7 @@ Parallel downloading
 --write-description
 --write-thumbnail
 ```
-
 </details>
-
 <details><summary>IntelliJ IDEA设置备忘录</summary>
 
 ```shell
@@ -351,7 +317,6 @@ options
 - ui.lnf.xml
 - yiiguxing.translation.xml
 ```
-
 </details>
 
 ## Useful Websites
@@ -363,7 +328,7 @@ options
 
 ## Software List(Indispensable)
 
-- [微软常用运行库](https://www.ghpym.com/yxkhj.html)、[Alter version](https://github.com/abbodi1406/vcredist/releases)
+- [微软常用运行库](https://www.ghpym.com/yxkhj.html)、[Alter version](https://github.com/abbodi1406/vcredist/releases)、[Official](https://docs.microsoft.com/zh-CN/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 - [HEU KMS Activator](https://www.423down.com/1202.html)、[winactivate](https://github.com/luzeadev/winactivate/releases)、[KMS_VL_ALL_AIO](https://github.com/abbodi1406/KMS_VL_ALL_AIO/releases)
 - [Netch](https://github.com/NetchX/Netch/releases)
 - [v2rayN](https://github.com/2dust/v2rayN/releases)
@@ -401,9 +366,74 @@ options
 - [N_m3u8DL-CLI](https://github.com/nilaoda/N_m3u8DL-CLI/releases)
 - [youtube-dl](https://github.com/ytdl-org/youtube-dl/releases)
 - [Snipaste](https://www.snipaste.com/)
-- [PotPlayer](https://potplayer.daum.net/)
+- [MPV](https://github.com/hooke007/MPV_lazy)
+<details><summary>MPV部分设置</summary>
+
+```
+# input.conf
+
+i                    script-binding stats/display-stats             # 临时显示统计信息（此时01234翻页，024页可方向上下键滚动查看）
+I                    script-binding stats/display-stats-toggle      # 开/关 常驻显示统计信息
+MBTN_LEFT_DBL        cycle pause                                    # 切换 暂停视频 [左键-双击]
+WHEEL_UP             add volume 1                                   # 音量加
+WHEEL_DOWN           add volume -1                                  # 音量减
+CTRL+LEFT            cycle-values video-rotate "0" "270" "180" "90" # 视频输出逆时针旋转90°
+CTRL+RIGHT           cycle-values video-rotate "0" "90" "180" "270" # 视频输出顺时针旋转90°
+.                    frame-step                                     # （暂停）帧步进
+,                    frame-back-step                                # （暂停）帧步退
+f                    cycle fullscreen                               # 切换 全屏状态
+LEFT                 seek -5                                        # 后退05秒 [方向左键]
+RIGHT                seek  5                                        # 前进05秒 [方向右键]
+UP                   add volume 1                                   # 音量加 [方向上键]
+DOWN                 add volume -1                                  # 音量减 [方向下键]
+[                    add speed -0.1                                 # 播放速度 -（最小0.01）
+]                    add speed  0.1                                 # 播放速度 +（最大100）
+BS                   set speed 1.0                                  # 重置播放速度 [退格键]
+s                    screenshot                                     # 截屏（有字幕、有OSD） 输出原始分辨率
+S                    screenshot video                               # 截屏（无字幕、无OSD） 输出原始分辨率
+
+# mpv.conf
+
+vo                 = gpu             # <gpu/gpu-next> 视频输出驱动。许多后续选项也只能在此三项下正常工作。当前版本默认值即gpu
+                                     # gpu最高普适性和完成度；gpu-next查看此处讨论 https://github.com/hooke007/MPV_lazy/discussions/39
+gpu-context        = d3d11           # <win/d3d11/winvk> 选择图形输出后端，默认auto（此项的值与 --gpu-api 相关联，分别对应opengl/d3d11/vulkan）
+                                     # 非特殊情况下win用户应首选d3d11。vulkan可能的10bit问题 https://github.com/mpv-player/mpv/issues/8554
+hwdec              = d3d11va-copy    # 指定应使用的硬件视频解码API。软解改为 no（默认）。硬解建议使用 d3d11va-copy。10系以上N卡强烈建议使用 nvdec-copy
+                                     # 值 auto 等效 yes。不推荐选用理论上解码效率最高的 无-copy 的原生硬解 ，目的是确保全部设置/滤镜/着色器正常作用（有些不支持）
+                                     # 在部分机器上 dxva2-copy 的占用可能远低于 d3d11va-copy
+hwdec-codecs       = all
+                                     # 在选定范围内的编码格式尝试硬解，当前版本默认值为 --hwdec-codecs=h264,vc1,hevc,vp8,vp9,av1
+d3d11-adapter      = "NVIDIA GeForce RTX 3060"
+                                     # [当 gpu-api=d3d11 时] 指定某张显卡作为主渲染输出，默认情况下自动选择系统指定的主渲染显卡。
+                                     # 显卡名可查看任务管理器自行更改适配。该参数等效在驱动面板中设置以独显运行mpv
+                                     # 例如使用I+N的双显笔记本的内屏时，实际使用的是"Intel(R) UHD Graphics"，修改该项示例指定独显可降低任务管理器中双显卡的3d渲染占比
+                                     # 大多数双显卡笔记本在外接显示器时，表现类似“独显直连”，此时无需该参数也会自动用独显输出
+pause                  = no          # 以非暂停状态启动播放器
+loop                   = inf         # <N|inf|no> 始终循环播放当前文件
+save-position-on-quit  = no          # 退出时不记住播放状态
+#vf-append = vapoursynth="~~/mvtools-standard.vpy"
+                                     # mvtools补帧脚本标准版
+#vf-append = vapoursynth="~~/svpflow-2x.vpy"
+                                     # 通过svpflow实现的补帧脚本动漫版（非SVP Manager程序）
+#glsl-shaders         = "~~/shaders/Anime4K_Clamp_Highlights.glsl;~~/shaders/Anime4K_Restore_CNN_M.glsl;~~/shaders/Anime4K_Upscale_CNN_x2_S.glsl"
+
+#glsl-shaders-append  = "~~/shaders/SSimDownscaler.glsl"
+                                     # [与 --linear-downscaling=no 一起使用] 对MPV的内置缩小算法增强
+#glsl-shaders-append  = "~~/shaders/adaptive-sharpen.glsl"
+                                     # [与 --sigmoid-upscaling=no 一起使用] 自适应锐化
+screenshot-format     = png          # <默认 jpg|png|webp>
+screenshot-template   = "~~desktop/MPV-%P-N%n"
+                                     # [若直接在模板中设置路径，此时无需 --screenshot-directory ] 截图命名模板： https://mpv.io/manual/master/#options-screenshot-template
+
+# thumbnailer.conf
+
+auto_gen=yes                         # 是否生成缩略图，默认：yes
+auto_show=yes                        # 是否显示缩略图，默认：yes
+auto_delete=2                        # 退出MPV后清理本次使用时产生的临时文件，0不清理，1关闭文件时清理，2退出程序时清理。默认0
+```
+</details>
+
 - [Honeyview](http://www.bandisoft.com/honeyview/)
-- [K-Lite Codec Pack Mega](http://www.codecguide.com/download_k-lite_codec_pack_mega.htm)
 - [阿里旺旺](https://alimarket.taobao.com/markets/qnww/portal-group/ww/download)
 - [Adobe software series](https://weibo.com/1112829033)
 - [百度云](http://pan.baidu.com/download)
@@ -424,6 +454,7 @@ options
 - [DDTV](https://github.com/CHKZL/DDTV/releases)
 - [EmEditor](https://www.423down.com/7569.html)
 - [Fences](https://store.steampowered.com/app/607380)
+- [PotPlayer](https://potplayer.daum.net/)、[K-Lite Codec Pack Mega](http://www.codecguide.com/download_k-lite_codec_pack_mega.htm)
 - [AIDA64](https://www.423down.com/887.html)
 - [AS SSD Benchmark](https://www.423down.com/6751.html)
 - [Cheat Engine](https://cheatengine.org/)
@@ -537,9 +568,7 @@ options
 - ~~[uBlacklist](https://github.com/iorate/uBlacklist)、[中文搜索结果黑名单](https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist)~~
 - ~~[Tree Style History](https://github.com/tumuyan/Tree-Style-History)~~
 - ~~[Wrona History Menu](https://github.com/lajw/history-menu)~~
-
 <details><summary>字体及美化</summary>
-
 - [更纱黑体(Iosevka+思源黑体)](https://github.com/be5invis/Sarasa-Gothic/releases)
 
 - [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono/releases)
@@ -547,5 +576,4 @@ options
 - [阿里巴巴普惠体](https://done.alibabadesign.com/puhuiti2.0)
 
 - [致美化](https://zhutix.com/)
-  
-  </details>
+</details>
